@@ -122,11 +122,11 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-stagger>
         {[
           { title: 'AI for SMBs', desc: 'Stop renting software. I help you build custom AI tools you own forever.', icon: '🤖', href: '/ai' },
-          { title: 'Business Development', desc: 'Strategic insights to refine and enhance your business growth plans.', icon: '📈', href: '/advisory' },
-          { title: 'Project Management', desc: 'External perspective on team dynamics, workflows, and project execution.', icon: '⚙️', href: '/advisory' },
-          { title: 'Community Development', desc: 'Strategies to build and nurture a vibrant community around your business.', icon: '🤝', href: '/advisory' },
-          { title: 'Brand Positioning', desc: 'Fresh ideas to strengthen and evolve your brand in the marketplace.', icon: '🎯', href: '/advisory' },
-          { title: 'Personal Mentorship', desc: 'Deeply personal guidance to unlock creative solutions and propel you forward.', icon: '🧭', href: '/advisory' },
+          { title: 'Business Development', desc: 'Strategic insights to refine and enhance your business growth plans.', icon: '📈', href: '/advisory#business-development' },
+          { title: 'Project Management', desc: 'External perspective on team dynamics, workflows, and project execution.', icon: '⚙️', href: '/advisory#project-management' },
+          { title: 'Community Development', desc: 'Strategies to build and nurture a vibrant community around your business.', icon: '🤝', href: '/advisory#community-development' },
+          { title: 'Brand Positioning', desc: 'Fresh ideas to strengthen and evolve your brand in the marketplace.', icon: '🎯', href: '/advisory#brand-positioning' },
+          { title: 'Personal Mentorship', desc: 'Deeply personal guidance to unlock creative solutions and propel you forward.', icon: '🧭', href: '/advisory#personal-mentorship' },
         ].map((service) => (
           <div class="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300 group">
             <span class="text-3xl">{service.icon}</span>
