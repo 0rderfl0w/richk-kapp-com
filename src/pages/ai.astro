@@ -1,11 +1,197 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="AI for SMBs | Perspective">
-  <section class="py-20">
+
+<Layout title="AI for SMBs | Richard Kappel" description="Stop renting software. I help SMBs and founders replace expensive SaaS subscriptions with AI-built custom tools you own forever.">
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-50/30 to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+      <div class="max-w-3xl mx-auto text-center animate-fade-in">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-4">AI for SMBs</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+          Stop Renting Software.<br />Start Owning It.
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          Your business runs on software you don't own. You're paying monthly for tools you barely use, locked into platforms that don't fit, and handing your data to someone else. There's a better way.
+        </p>
+        <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-brand-600 text-white font-semibold rounded-lg hover:bg-brand-700 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+          Let's Talk About Your Stack →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Problem</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">SaaS Bloat Is Draining Your Budget</h2>
+          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+            Most small businesses pay $500–2,000+ per month on SaaS subscriptions. CRMs, project management tools, scheduling apps, invoicing platforms — each one charging monthly for features you'll never touch.
+          </p>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            You're locked into their workflows, limited by their design choices, and dependent on their pricing decisions. Your data lives on their servers. And every month, the meter keeps running.
+          </p>
+        </div>
+        <div class="space-y-4">
+          {[
+            { amount: '$49–199/mo', tool: 'CRM you use at 20% capacity' },
+            { amount: '$30–99/mo', tool: 'Project management with features you ignore' },
+            { amount: '$25–79/mo', tool: 'Scheduling tool that could be a simple form' },
+            { amount: '$50–150/mo', tool: 'Invoicing platform for basic billing' },
+          ].map((item) => (
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 flex items-center gap-4">
+              <span class="text-brand-600 font-bold text-sm whitespace-nowrap">{item.amount}</span>
+              <p class="text-gray-600 text-sm">{item.tool}</p>
+            </div>
+          ))}
+          <div class="bg-brand-600 rounded-2xl p-6 text-white text-center">
+            <p class="text-lg font-semibold">That's $6,000–18,000+ per year</p>
+            <p class="text-sm opacity-90 mt-1">For tools you don't fully use and don't own.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Solution</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">AI-Built Custom Tools You Own Forever</h2>
+        <p class="mt-4 text-gray-600 text-lg">
+          AI can now build custom software tailored to exactly how your business works. No monthly fees. Full customization. Your data stays yours.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-8">
+        {[
+          {
+            icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />',
+            title: 'No Monthly Fees',
+            desc: 'Pay once to build it. Own it forever. No subscriptions, no price hikes, no vendor lock-in.'
+          },
+          {
+            icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />',
+            title: 'Built for You',
+            desc: 'Every feature designed around your workflow. No bloat, no workarounds, no compromises.'
+          },
+          {
+            icon: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />',
+            title: 'Your Data, Your Servers',
+            desc: 'No third-party access. No data harvesting. Full control over where your information lives.'
+          },
+        ].map((item) => (
+          <div class="bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300">
+            <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" set:html={item.icon} />
+            </div>
+            <h3 class="text-lg font-bold text-gray-900">{item.title}</h3>
+            <p class="mt-3 text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- What This Looks Like -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">In Practice</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">What This Looks Like</h2>
+        <p class="mt-4 text-gray-600 text-lg">
+          Real scenarios where AI-built tools replace expensive subscriptions.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          {
+            emoji: '📇',
+            title: 'Custom CRM',
+            before: 'Paying $99/mo for a CRM with 200 features — using 15.',
+            after: 'A lightweight CRM built around your exact sales process. Track leads, follow-ups, and deals your way.',
+          },
+          {
+            emoji: '📅',
+            title: 'Scheduling & Booking',
+            before: 'Paying $30/mo for Calendly-style booking with limited customization.',
+            after: 'Your own booking system with custom availability rules, intake forms, and automatic confirmations.',
+          },
+          {
+            emoji: '📊',
+            title: 'Project Dashboard',
+            before: 'Paying $150/mo for project management seats your team barely logs into.',
+            after: 'A focused dashboard that tracks what matters to your team — nothing more, nothing less.',
+          },
+        ].map((item) => (
+          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300">
+            <span class="text-3xl">{item.emoji}</span>
+            <h3 class="mt-4 text-lg font-bold text-gray-900">{item.title}</h3>
+            <div class="mt-4 space-y-3">
+              <div>
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wide">Before</p>
+                <p class="text-sm text-gray-600 mt-1">{item.before}</p>
+              </div>
+              <div>
+                <p class="text-xs font-semibold text-brand-600 uppercase tracking-wide">After</p>
+                <p class="text-sm text-gray-600 mt-1">{item.after}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">How It Works</h2>
+      <div class="grid md:grid-cols-4 gap-8">
+        {[
+          { step: '1', title: 'Discovery Call', desc: 'We talk through your business, your tools, and where the pain is.' },
+          { step: '2', title: 'Tool Audit', desc: 'I map every SaaS tool you use — what it costs, what you actually need from it.' },
+          { step: '3', title: 'Build Replacements', desc: 'Using AI, I build custom tools tailored to your exact workflows.' },
+          { step: '4', title: 'Deploy & Train', desc: 'Your tools go live. I train your team and make sure everything runs smooth.' },
+        ].map((item) => (
+          <div class="text-center group">
+            <div class="w-16 h-16 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-white text-2xl font-bold">{item.step}</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900">{item.title}</h3>
+            <p class="mt-4 text-gray-600 leading-relaxed text-sm">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Build to Own Club -->
+  <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-      <h1 class="text-4xl font-bold text-gray-900">AI for SMBs</h1>
-      <p class="mt-4 text-gray-600 text-lg">Coming soon.</p>
+      <div class="bg-gray-50 rounded-2xl p-8 md:p-12 border border-gray-100">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Community</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Build to Own Club</h2>
+        <p class="mt-4 text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
+          You're not alone in this shift. Join a growing community of founders and operators who are taking back control of their software stack — building tools they own, sharing what works, and helping each other move faster.
+        </p>
+        <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-6 py-3 bg-brand-600 text-white font-semibold rounded-lg hover:bg-brand-700 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+          Get Started →
+        </a>
+      </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+</style>
