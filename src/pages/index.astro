@@ -47,10 +47,18 @@ import Layout from '../layouts/Layout.astro';
   <!-- First Testimonial -->
   <section class="bg-gray-50 py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <blockquote class="text-gray-700 text-lg leading-relaxed italic">
-        "Richard's Project Management support, using tools like Trello, Slack, and Google Calendar, transformed our operations at Impact Hub by unifying activities on a single platform and customizing solutions to our needs. His hands-on approach and adaptability were invaluable, fostering a transparent, constructive culture that strengthened team unity. Richard's commitment to understanding both professional and emotional challenges made a significant impact. His guidance and innovative strategies are crucial assets for any organization seeking growth."
-      </blockquote>
-      <p class="mt-4 text-sm font-semibold text-gray-900">— Impact Hub Operations</p>
+      <div class="bg-white rounded-2xl p-8 border border-gray-100">
+        <div class="flex items-center gap-4 mb-4">
+          <img src="/testimonial-francesco.jpeg" alt="Francesco Rocca" class="w-12 h-12 rounded-full object-cover" />
+          <div>
+            <p class="font-semibold text-gray-900">Francesco Rocca</p>
+            <p class="text-sm text-gray-500">Managing Director, Impact Hub Lisbon</p>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          "Richard's Project Management support, using tools like Trello, Slack, and Google Calendar, transformed our operations at Impact Hub by unifying activities on a single platform and customizing solutions to our needs. His hands-on approach and adaptability were invaluable, fostering a transparent, constructive culture that strengthened team unity. Richard's commitment to understanding both professional and emotional challenges made a significant impact. His guidance and innovative strategies are crucial assets for any organization seeking growth."
+        </p>
+      </div>
     </div>
   </section>
 
@@ -111,12 +119,13 @@ import Layout from '../layouts/Layout.astro';
           Personalized Support for Solopreneurs, Early-Stage Startups, and Hybrid or Fully-remote Teams.
         </p>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {[
-          { title: 'Business Development', desc: 'Providing strategic insights to refine and enhance your business growth plans.', icon: '📈' },
-          { title: 'Brand Development', desc: 'Bringing fresh ideas to strengthen and evolve your brand in the marketplace.', icon: '🎯' },
-          { title: 'Community Development', desc: 'Advising on strategies to build and nurture a vibrant community around your business.', icon: '🤝' },
-          { title: 'Operations Management', desc: 'Delivering an external viewpoint on team dynamics and project execution.', icon: '⚙️' },
+          { title: 'Business Development', desc: 'Strategic insights to refine and enhance your business growth plans.', icon: '📈' },
+          { title: 'Project Management', desc: 'External perspective on team dynamics, workflows, and project execution.', icon: '⚙️' },
+          { title: 'Community Development', desc: 'Strategies to build and nurture a vibrant community around your business.', icon: '🤝' },
+          { title: 'Brand Positioning', desc: 'Fresh ideas to strengthen and evolve your brand in the marketplace.', icon: '🎯' },
+          { title: 'Personal Mentorship', desc: 'Deeply personal guidance to unlock creative solutions and propel you forward.', icon: '🧭' },
         ].map((service) => (
           <div class="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300 group">
             <span class="text-3xl">{service.icon}</span>
