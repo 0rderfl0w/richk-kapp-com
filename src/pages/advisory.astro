@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Advisory Services | Richard Kappel" description="Tailored strategic advisory across business development, brand, community, and operations for solopreneurs, startups, and distributed teams.">
+<Layout title="Advisory Services | Richard Kappel" description="Tailored strategic advisory across business development, project management, community, brand positioning, and personal mentorship.">
   <!-- Hero -->
   <section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-50/30 to-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
@@ -12,13 +12,13 @@ import Layout from '../layouts/Layout.astro';
           Strategic Support, Tailored to You
         </h1>
         <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Whether you're refining your growth strategy, strengthening your brand, building community, or optimizing operations — I bring outside perspective and hands-on guidance to help you move forward with clarity.
+          Whether you're refining your growth strategy, streamlining operations, building community, strengthening your brand, or working through a personal challenge — I bring outside perspective and hands-on guidance to help you move forward with clarity.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Business Development -->
+  <!-- 1. Business Development -->
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -29,10 +29,10 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 01</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Business Development</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-            Strategic insights to refine and enhance your growth plans. I help you see the bigger picture — where the market is headed, where you fit, and how to get there faster.
+            Top CEOs and entrepreneurs rely on advisors for a reason — an outside perspective is invaluable. I help you see the bigger picture, challenge assumptions, and navigate complexity with honest, unbiased feedback.
           </p>
           <div class="mt-6 space-y-3">
-            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Market positioning, revenue strategy, growth planning</p>
+            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Market positioning, revenue strategy, growth planning, competitive dynamics</p>
           </div>
         </div>
         <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
@@ -40,9 +40,9 @@ import Layout from '../layouts/Layout.astro';
           <div class="space-y-4">
             {[
               { step: '01', title: 'Stakeholder Interviews', desc: 'Deep-dive conversations to understand your vision, challenges, and market reality.' },
-              { step: '02', title: 'Market Analysis', desc: 'Research your competitive landscape and identify whitespace opportunities.' },
-              { step: '03', title: 'Competitive Positioning', desc: 'Define where you stand and how to differentiate with clarity.' },
-              { step: '04', title: 'Actionable Roadmap', desc: 'A prioritized plan you can execute on immediately — not a deck that collects dust.' },
+              { step: '02', title: 'Market & Competitive Analysis', desc: 'Uncover hidden opportunities, potential risks, and whitespace in your market.' },
+              { step: '03', title: 'Strategic Positioning', desc: 'Set ambitious but realistic goals aligned with your values and market dynamics.' },
+              { step: '04', title: 'Actionable Roadmap', desc: 'Quick wins for short-term gains plus robust strategies for long-term growth.' },
             ].map((item) => (
               <div class="flex gap-4">
                 <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Brand Development -->
+  <!-- 2. Project Management -->
   <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -66,90 +66,10 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
-              { step: '01', title: 'Brand Audit', desc: 'Evaluate your current brand presence, messaging, and perception in the market.' },
-              { step: '02', title: 'Positioning Workshop', desc: 'Collaborative sessions to define who you are, who you serve, and why it matters.' },
-              { step: '03', title: 'Messaging Framework', desc: 'Clear, consistent language that resonates with your audience across every channel.' },
-              { step: '04', title: 'Implementation Support', desc: 'Hands-on guidance to roll out your refreshed brand with confidence.' },
-            ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
-                <div>
-                  <p class="font-semibold text-gray-900">{item.title}</p>
-                  <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div class="order-1 md:order-2">
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 02</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Brand Development</h2>
-          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-            Fresh ideas to strengthen and evolve your brand presence. Your brand is more than a logo — it's how people experience you. I help you make that experience intentional.
-          </p>
-          <div class="mt-6 space-y-3">
-            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Brand identity, messaging, digital presence</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Community Development -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-          </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 03</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Community Development</h2>
-          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-            Build and nurture vibrant communities around your mission. Communities don't happen by accident — they're designed, cultivated, and led with intention.
-          </p>
-          <div class="mt-6 space-y-3">
-            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Community strategy, engagement, culture building</p>
-          </div>
-        </div>
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
-          <div class="space-y-4">
-            {[
-              { step: '01', title: 'Community Audit', desc: 'Assess your current community health, engagement patterns, and growth potential.' },
-              { step: '02', title: 'Engagement Framework', desc: 'Design rituals, touchpoints, and systems that keep members active and invested.' },
-              { step: '03', title: 'Leadership Development', desc: 'Identify and empower community champions who can scale your impact.' },
-              { step: '04', title: 'Metrics & Tracking', desc: 'Define what success looks like and build dashboards to measure it.' },
-            ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
-                <div>
-                  <p class="font-semibold text-gray-900">{item.title}</p>
-                  <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Operations Management -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 bg-white rounded-2xl p-8 border border-gray-100">
-          <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
-          <div class="space-y-4">
-            {[
-              { step: '01', title: 'Operations Audit', desc: 'Map your current workflows, tools, and team dynamics to find friction points.' },
-              { step: '02', title: 'Workflow Design', desc: 'Redesign processes for clarity, speed, and accountability.' },
-              { step: '03', title: 'Tool Stack Optimization', desc: 'Cut the bloat. Implement the right tools, configured the right way.' },
-              { step: '04', title: 'Team Coaching', desc: 'Help your team adopt new systems and build habits that stick.' },
+              { step: '01', title: 'Methodology Assessment', desc: 'Comprehensive analysis of your current project management practices and pain points.' },
+              { step: '02', title: 'Workflow Optimization', desc: 'Streamline processes using best practices — Agile, Scrum, Lean, or hybrid approaches.' },
+              { step: '03', title: 'Tool & System Design', desc: 'Implement the right tools configured for your team, not a one-size-fits-all template.' },
+              { step: '04', title: 'Check-ins & Coaching', desc: 'Regular progress tracking and team coaching to build habits that stick.' },
             ].map((item) => (
               <div class="flex gap-4">
                 <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
@@ -165,13 +85,133 @@ import Layout from '../layouts/Layout.astro';
           <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 04</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Operations Management</h2>
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 02</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Project Management</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-            An external viewpoint on team dynamics and project execution. Sometimes you need someone outside the day-to-day to see what's slowing you down.
+            Poor project management leads to missed deadlines, inflated budgets, and stalled innovation. An external advisor brings clarity and strategic insights for streamlined success — fostering collaboration, proactive risk management, and continuous improvement.
           </p>
           <div class="mt-6 space-y-3">
-            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Process optimization, tool implementation, team alignment</p>
+            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Process optimization, Agile/Scrum/Lean, team alignment, tool implementation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Community Development -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+          </div>
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 03</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Community Development</h2>
+          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+            Building a strong community isn't about numbers — it's about fostering genuine connections and a sense of belonging. An outside perspective helps you view objectively, uncover opportunities, and avoid pitfalls that lead to enhanced loyalty, engagement, and market presence.
+          </p>
+          <div class="mt-6 space-y-3">
+            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Community strategy, engagement frameworks, culture building, leadership development</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
+          <div class="space-y-4">
+            {[
+              { step: '01', title: 'Community Audit', desc: 'Thorough analysis of your current community initiatives, platforms, and engagement patterns.' },
+              { step: '02', title: 'Engagement Framework', desc: 'Design the right platforms, compelling messages, and genuine connection points.' },
+              { step: '03', title: 'Leadership Development', desc: 'Identify and empower community champions who can scale your impact authentically.' },
+              { step: '04', title: 'Reviews & Feedback Loops', desc: 'Regular check-ins focused on authenticity, value, and measurable outcomes.' },
+            ].map((item) => (
+              <div class="flex gap-4">
+                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+                <div>
+                  <p class="font-semibold text-gray-900">{item.title}</p>
+                  <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Brand Positioning -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 bg-white rounded-2xl p-8 border border-gray-100">
+          <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
+          <div class="space-y-4">
+            {[
+              { step: '01', title: 'Brand Perception Audit', desc: 'See your brand through your customers\' eyes — visual identity, messaging, and market perception.' },
+              { step: '02', title: 'Positioning Workshop', desc: 'Collaborative sessions to define who you are, who you serve, and what makes you different.' },
+              { step: '03', title: 'Messaging Framework', desc: 'Craft compelling value propositions and consistent language across every touchpoint.' },
+              { step: '04', title: 'Implementation Support', desc: 'Hands-on guidance to roll out your refined brand with confidence and consistency.' },
+            ].map((item) => (
+              <div class="flex gap-4">
+                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+                <div>
+                  <p class="font-semibold text-gray-900">{item.title}</p>
+                  <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 04</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Brand Positioning</h2>
+          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+            Your brand is more than a logo or tagline — it's how your audience perceives and connects with you. Fresh eyes reveal how your brand is truly perceived in the marketplace, keeping it relevant, compelling, and aligned with your market.
+          </p>
+          <div class="mt-6 space-y-3">
+            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Brand identity, messaging strategy, digital presence, market perception</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Personal Mentorship -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" /></svg>
+          </div>
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 05</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Personal Mentorship</h2>
+          <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+            Like having a secret weapon for smarter decisions. I help you unlock creative solutions, break through barriers, and operate at your highest potential — because when you level up, everyone around you feels the ripple effect.
+          </p>
+          <div class="mt-6 space-y-3">
+            <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Mindset & confidence, strategic thinking, resilience, creative problem-solving</p>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
+          <div class="space-y-4">
+            {[
+              { step: '01', title: 'Deep Discovery', desc: 'Diving into your dreams, strengths, and obstacles — this is deeply personal and uniquely tailored.' },
+              { step: '02', title: 'Bespoke Plan', desc: 'A plan designed just for you, blending creative and practical techniques for your situation.' },
+              { step: '03', title: 'Dynamic Sessions', desc: 'Engaging, honest, unfiltered conversations — not therapy, not coaching, but real strategic partnership.' },
+              { step: '04', title: 'Empowerment & Tools', desc: 'Build the mindset and practical toolkit to make confident decisions long after our work together.' },
+            ].map((item) => (
+              <div class="flex gap-4">
+                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+                <div>
+                  <p class="font-semibold text-gray-900">{item.title}</p>
+                  <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -179,7 +219,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- How I Work -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">How I Work</h2>
       <div class="grid md:grid-cols-3 gap-8">
