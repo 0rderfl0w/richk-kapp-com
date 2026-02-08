@@ -8,6 +8,8 @@ const {
   title = 'Perspective — Strategic Advisory | Richard Kappel',
   description = 'I help people and teams figure sh*t out and grow. Strategic advisory for solopreneurs, startups, and distributed teams.',
 } = Astro.props;
+
+const currentPath = Astro.url.pathname;
 ---
 
 <!doctype html>
@@ -33,8 +35,8 @@ const {
           <span class="text-brand-600">Perspective</span>
         </a>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-          <a href="/advisory" class="hover:text-brand-600 transition-colors">Advisory</a>
-          <a href="/ai" class="hover:text-brand-600 transition-colors">AI for SMBs</a>
+          <a href="/advisory" class={`hover:text-brand-600 transition-colors pb-1 ${currentPath.startsWith('/advisory') ? 'text-brand-600 border-b-2 border-brand-600' : ''}`}>Advisory</a>
+          <a href="/ai" class={`hover:text-brand-600 transition-colors pb-1 ${currentPath.startsWith('/ai') ? 'text-brand-600 border-b-2 border-brand-600' : ''}`}>AI for SMBs</a>
           <a href="/contact" class="inline-flex items-center px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors">
             Request a Session
           </a>
