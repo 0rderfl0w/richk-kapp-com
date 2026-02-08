@@ -16,26 +16,30 @@ import Layout from '../layouts/Layout.astro';
         </p>
       </div>
     </div>
+    <div class="absolute top-20 right-10 w-64 h-64 bg-brand-50 rounded-full blur-3xl opacity-40 -z-10"></div>
+    <div class="absolute bottom-10 left-10 w-48 h-48 bg-brand-100/50 rounded-full blur-2xl opacity-30 -z-10"></div>
   </section>
 
   <!-- Business Development -->
-  <section class="py-20 bg-white">
+  <section class="py-20 scroll-reveal">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+        <div class="slide-in-left">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-700 rounded-xl flex items-center justify-center shadow-lg shadow-brand-200">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+            </div>
+            <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent"></div>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 01</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Business Development</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
             Top CEOs, entrepreneurs, and world leaders all rely on advisors. An outside perspective is invaluable — it's about gaining insights you might miss on your own and staying ahead in a competitive market. I help you see the bigger picture, challenge your assumptions, and navigate the complexities of growing a business.
           </p>
-          <div class="mt-6 space-y-3">
+          <div class="mt-6">
             <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Market positioning, revenue strategy, growth planning, competitive analysis</p>
           </div>
         </div>
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+        <div class="slide-in-right bg-gradient-to-br from-white to-brand-50/40 rounded-2xl p-8 border border-brand-100/60 shadow-sm hover:shadow-md transition-shadow duration-500">
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
@@ -44,8 +48,8 @@ import Layout from '../layouts/Layout.astro';
               { step: '03', title: 'Competitive Positioning', desc: 'Define where you stand and how to differentiate with clarity.' },
               { step: '04', title: 'Actionable Roadmap', desc: 'A prioritized plan you can execute on immediately — not a deck that collects dust.' },
             ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+              <div class="flex gap-4 group">
+                <span class="text-brand-600 font-bold text-sm mt-1 opacity-40 group-hover:opacity-100 transition-opacity">{item.step}</span>
                 <div>
                   <p class="font-semibold text-gray-900">{item.title}</p>
                   <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
@@ -58,11 +62,14 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
   <!-- Project Management -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 scroll-reveal">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 bg-white rounded-2xl p-8 border border-gray-100">
+        <div class="order-2 md:order-1 slide-in-left bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-500">
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
@@ -71,8 +78,8 @@ import Layout from '../layouts/Layout.astro';
               { step: '03', title: 'Tool Stack Optimization', desc: 'Cut the bloat. Implement the right tools, configured the right way.' },
               { step: '04', title: 'Team Coaching', desc: 'Help your team adopt new systems and build habits that stick through regular check-ins and progress tracking.' },
             ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+              <div class="flex gap-4 group">
+                <span class="text-brand-600 font-bold text-sm mt-1 opacity-40 group-hover:opacity-100 transition-opacity">{item.step}</span>
                 <div>
                   <p class="font-semibold text-gray-900">{item.title}</p>
                   <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
@@ -81,16 +88,18 @@ import Layout from '../layouts/Layout.astro';
             ))}
           </div>
         </div>
-        <div class="order-1 md:order-2">
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        <div class="order-1 md:order-2 slide-in-right">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-700 rounded-xl flex items-center justify-center shadow-lg shadow-brand-200">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+            </div>
+            <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent"></div>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 02</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Project Management</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
             Poor project management leads to missed deadlines, inflated budgets, and stalled innovation. An outside perspective provides the clarity and strategic insights needed to transform inefficiency into streamlined success. I don't believe in one-size-fits-all — I draw from Agile, Scrum, Lean, and traditional frameworks to craft something that fits you.
           </p>
-          <div class="mt-6 space-y-3">
+          <div class="mt-6">
             <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Process optimization, tool implementation, team alignment, workflow design</p>
           </div>
         </div>
@@ -98,24 +107,29 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
   <!-- Community Development -->
-  <section class="py-20 bg-white">
+  <section class="py-20 scroll-reveal">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+        <div class="slide-in-left">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-700 rounded-xl flex items-center justify-center shadow-lg shadow-brand-200">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            </div>
+            <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent"></div>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 03</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Community Development</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
             Building and nurturing a strong community is crucial for sustainable success. Being deeply involved in operations makes it hard to see the broader picture. I help you view your community efforts objectively — uncovering opportunities and potential pitfalls. This isn't about increasing numbers; it's about fostering genuine connections and a sense of belonging.
           </p>
-          <div class="mt-6 space-y-3">
+          <div class="mt-6">
             <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Community strategy, engagement frameworks, culture building, leadership development</p>
           </div>
         </div>
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+        <div class="slide-in-right bg-gradient-to-br from-white to-brand-50/40 rounded-2xl p-8 border border-brand-100/60 shadow-sm hover:shadow-md transition-shadow duration-500">
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
@@ -124,8 +138,8 @@ import Layout from '../layouts/Layout.astro';
               { step: '03', title: 'Leadership Development', desc: 'Identify and empower community champions who can scale your impact.' },
               { step: '04', title: 'Metrics & Tracking', desc: 'Define what success looks like and build dashboards to measure it.' },
             ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+              <div class="flex gap-4 group">
+                <span class="text-brand-600 font-bold text-sm mt-1 opacity-40 group-hover:opacity-100 transition-opacity">{item.step}</span>
                 <div>
                   <p class="font-semibold text-gray-900">{item.title}</p>
                   <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
@@ -138,11 +152,14 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
   <!-- Brand Positioning -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 scroll-reveal">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1 bg-white rounded-2xl p-8 border border-gray-100">
+        <div class="order-2 md:order-1 slide-in-left bg-gradient-to-br from-white to-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-500">
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
@@ -151,8 +168,8 @@ import Layout from '../layouts/Layout.astro';
               { step: '03', title: 'Messaging Framework', desc: 'Clear, consistent language that resonates with your audience across every channel.' },
               { step: '04', title: 'Implementation Support', desc: 'Hands-on guidance to roll out your refreshed brand with confidence.' },
             ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+              <div class="flex gap-4 group">
+                <span class="text-brand-600 font-bold text-sm mt-1 opacity-40 group-hover:opacity-100 transition-opacity">{item.step}</span>
                 <div>
                   <p class="font-semibold text-gray-900">{item.title}</p>
                   <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
@@ -161,16 +178,18 @@ import Layout from '../layouts/Layout.astro';
             ))}
           </div>
         </div>
-        <div class="order-1 md:order-2">
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+        <div class="order-1 md:order-2 slide-in-right">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-700 rounded-xl flex items-center justify-center shadow-lg shadow-brand-200">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent"></div>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 04</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Brand Positioning</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
             Your brand is more than a logo or tagline — it's how your audience perceives and connects with your business. A fresh set of eyes can reveal how your brand is truly perceived in the marketplace, identifying strengths and areas needing improvement. This objective insight keeps your brand relevant, compelling, and aligned with market demands.
           </p>
-          <div class="mt-6 space-y-3">
+          <div class="mt-6">
             <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Brand identity, digital presence, value proposition, market perception</p>
           </div>
         </div>
@@ -178,24 +197,29 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
   <!-- Personal Mentorship -->
-  <section class="py-20 bg-white">
+  <section class="py-20 scroll-reveal">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+        <div class="slide-in-left">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-700 rounded-xl flex items-center justify-center shadow-lg shadow-brand-200">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+            </div>
+            <div class="h-px flex-1 bg-gradient-to-r from-brand-200 to-transparent"></div>
           </div>
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Service 05</p>
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Personal Mentorship</h2>
           <p class="mt-4 text-gray-600 text-lg leading-relaxed">
             Having a mentor is like having a secret weapon. It's not just about avoiding mistakes — it's about making smarter decisions that propel you forward. The right mentor provides insights and perspectives you might not see on your own, helping you unlock creative solutions and innovative approaches to personal and professional challenges.
           </p>
-          <div class="mt-6 space-y-3">
+          <div class="mt-6">
             <p class="text-gray-600"><span class="font-semibold text-gray-900">Focus areas:</span> Mindset development, strategic thinking, decision-making, personal growth</p>
           </div>
         </div>
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+        <div class="slide-in-right bg-gradient-to-br from-white to-brand-50/40 rounded-2xl p-8 border border-brand-100/60 shadow-sm hover:shadow-md transition-shadow duration-500">
           <h3 class="text-lg font-bold text-gray-900 mb-6">My Approach</h3>
           <div class="space-y-4">
             {[
@@ -204,8 +228,8 @@ import Layout from '../layouts/Layout.astro';
               { step: '03', title: 'Dynamic Sessions', desc: 'Engaging conversations with honest, unfiltered feedback using creative and practical techniques.' },
               { step: '04', title: 'Empowerment', desc: 'Building your resilience and strategic thinking so you make confident, impactful decisions on your own.' },
             ].map((item) => (
-              <div class="flex gap-4">
-                <span class="text-brand-600 font-bold text-sm mt-1">{item.step}</span>
+              <div class="flex gap-4 group">
+                <span class="text-brand-600 font-bold text-sm mt-1 opacity-40 group-hover:opacity-100 transition-opacity">{item.step}</span>
                 <div>
                   <p class="font-semibold text-gray-900">{item.title}</p>
                   <p class="text-sm text-gray-600 mt-1">{item.desc}</p>
@@ -219,12 +243,13 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- How I Work -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 relative overflow-hidden scroll-reveal">
+    <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/20 to-white -z-10"></div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">How I Work</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16 slide-in-up">How I Work</h2>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center group">
-          <div class="w-16 h-16 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div class="text-center group slide-in-up" style="animation-delay: 0.1s">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-200 transition-all duration-300">
             <span class="text-white text-2xl font-bold">1</span>
           </div>
           <h3 class="text-xl font-bold text-gray-900">Intro Call</h3>
@@ -233,8 +258,8 @@ import Layout from '../layouts/Layout.astro';
             We'll talk through what's on your plate and what "better" looks like. If I'm not the right fit, I'll point you to someone who is.
           </p>
         </div>
-        <div class="text-center group">
-          <div class="w-16 h-16 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div class="text-center group slide-in-up" style="animation-delay: 0.2s">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-200 transition-all duration-300">
             <span class="text-white text-2xl font-bold">2</span>
           </div>
           <h3 class="text-xl font-bold text-gray-900">Clarity Sprint</h3>
@@ -243,8 +268,8 @@ import Layout from '../layouts/Layout.astro';
             We go deep on the real blockers and priorities. Top 3 priorities, 90-day focus, decision rules & metrics. This is where the fog lifts.
           </p>
         </div>
-        <div class="text-center group">
-          <div class="w-16 h-16 bg-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+        <div class="text-center group slide-in-up" style="animation-delay: 0.3s">
+          <div class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand-200 transition-all duration-300">
             <span class="text-white text-2xl font-bold">3</span>
           </div>
           <h3 class="text-xl font-bold text-gray-900">Momentum Rhythm</h3>
@@ -254,8 +279,8 @@ import Layout from '../layouts/Layout.astro';
           </p>
         </div>
       </div>
-      <div class="mt-12 text-center">
-        <a href="/contact" class="inline-flex items-center gap-2 px-8 py-4 bg-brand-600 text-white font-semibold rounded-lg hover:bg-brand-700 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 text-lg">
+      <div class="mt-12 text-center slide-in-up" style="animation-delay: 0.4s">
+        <a href="/contact" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-brand-200 transition-all duration-300 transform hover:-translate-y-0.5 text-lg">
           Request a Session →
         </a>
       </div>
@@ -271,4 +296,44 @@ import Layout from '../layouts/Layout.astro';
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out;
   }
+
+  /* Scroll-triggered animations */
+  .slide-in-left,
+  .slide-in-right,
+  .slide-in-up {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .slide-in-left {
+    transform: translateX(-40px);
+  }
+  .slide-in-right {
+    transform: translateX(40px);
+  }
+  .slide-in-up {
+    transform: translateY(30px);
+  }
+  .slide-in-left.visible,
+  .slide-in-right.visible,
+  .slide-in-up.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
 </style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+  );
+
+  document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up').forEach((el) => {
+    observer.observe(el);
+  });
+</script>
