@@ -1,7 +1,7 @@
 # AGENTS.md — richkapp.com
 
 ## Overview
-Personal/professional website for Richard Kappel — serial entrepreneur, advisory services, AI for SMBs advocate. Four-page marketing site: home (landing), advisory services, AI for SMBs, and contact.
+Personal/professional website for Richard Kappel — serial entrepreneur, advisory services, and agentic AI solutions for businesses. Four-page marketing site: home (landing), advisory services, AI for SMBs (/ai), and contact. AI for SMBs is a service offering under this business, not a separate project.
 
 **Live:** [richkapp.com](https://richkapp.com)
 **Repo:** `0rderfl0w/richk-kapp-com` (GitHub)
@@ -14,7 +14,7 @@ Personal/professional website for Richard Kappel — serial entrepreneur, adviso
 | Runtime | **Bun** — never use npm/yarn/pnpm |
 | React | Integrated via `@astrojs/react` (for interactive components if needed) |
 | Hosting | Hostinger (static), Git deploy from orphan `deploy` branch |
-| Domain | richkapp.com |
+| Domain | richkapp.com (DNS managed at registrar, A record → Hostinger 145.223.77.153) |
 
 ## Project Structure
 ```
