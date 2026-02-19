@@ -1,3 +1,6 @@
 node_modules/
 dist/
 .astro/
+
+# Foreclosure bot Python venv
+foreclosure-bot/.venv/
