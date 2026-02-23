@@ -2,8 +2,13 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+## 2026-07-18
+- Restructured /ai page: moved contractor-specific content to /ai/contractors, created new generic AI consulting landing page at /ai with 8 sections (Crash & Burn)
+- Fixed hero headline forced line break for better text flow (Crash & Burn)
+- Rewrote Section 2 copy: competitive pressure angle replacing layoff framing, per Alex's spec update (Crash & Burn)
+- Redesigned stat cards: 2x2 grid with large bold numbers, accent bars, hover effects (Crash & Burn)
+
 ## 2026-02-23
-- Restructured /ai page: moved contractor-specific content to /ai/contractors, created new generic AI consulting landing page at /ai (Subagent)
 
 ## 2026-02-19
 - Merged foreclosure-bot/ into richkapp.com as subdirectory (Zeno)
