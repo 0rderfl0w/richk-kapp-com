@@ -2,6 +2,29 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+## 2026-02-23
+- Restructured /ai page: moved contractor-specific content to /ai/contractors, created new generic AI consulting landing page at /ai (Subagent)
+
+## 2026-02-19
+- Merged foreclosure-bot/ into richkapp.com as subdirectory (Zeno)
+- Added foreclosure-bot/.venv/ to .gitignore (Zeno)
+
+## 2026-02-18
+- Updated hero headline to be more direct (Agent)
+- Refined quote workflow to send to contractor's inbox for review instead of direct client send (Agent)
+- Launched AI services page for done-for-you quote agents targeting trade contractors (Agent)
+
+## 2026-02-08
+- Major website redesign across multiple pages (Agent):
+  - Rebuilt home page with new hero, scroll-triggered animations
+  - Created AI for SMBs and advisory pages with modern design
+  - Implemented service cards, founder section, and community CTA
+  - Added scroll animations, gradient dividers, and responsive layouts
+- Expanded service offerings to 5 core services
+- Integrated Web3Forms for contact form
+- Optimized page navigation with active link underlines
+- Replaced static about page content with more dynamic founder section
+
 ## 2025-07-15
 - Full rewrite of /ai page (Alex). Old focus: "stop renting SaaS / join B2OC." New focus: done-for-you AI quote agents for trade contractors.
 - Decision: B2OC demoted to small card at bottom of page. Main product is custom agent setup ($597 + $97/mo).

@@ -1,0 +1,339 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="AI Integration Consulting | Richard Kappel" description="Custom AI systems that handle the repetitive work your team does every day. Quoting, scheduling, customer follow-up, data entry. Book a free consultation.">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-50/30 to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+      <div class="max-w-3xl mx-auto text-center animate-fade-in">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-4">AI Integration Consulting</p>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+          Your business runs on manual work.<br />I replace it with AI.
+        </h1>
+        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          I build custom AI systems that handle the repetitive work your team does every day. Quoting, scheduling, customer follow-up, data entry. Gone.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-brand-200 transition-all duration-300 transform hover:-translate-y-0.5 text-lg">
+            Book a Free Consultation →
+          </a>
+          <a href="#what-i-build" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-brand-600 font-semibold rounded-lg border border-brand-200 hover:border-brand-400 transition-all duration-300 text-lg">
+            See What I Build ↓
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute top-20 right-10 w-64 h-64 bg-brand-50 rounded-full blur-3xl opacity-40 -z-10"></div>
+    <div class="absolute bottom-10 left-10 w-48 h-48 bg-brand-100/50 rounded-full blur-2xl opacity-30 -z-10"></div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- The Problem -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="slide-in-left">
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Real Problem</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">You're paying people to do work a machine should handle.</h2>
+          <p class="mt-6 text-gray-600 text-lg leading-relaxed">
+            Every business has 3 to 5 workflows that eat hours every week. Manual quoting. Inbox triage. Appointment scheduling. Data entry from photos. Follow-up sequences that nobody remembers to send.
+          </p>
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Your team is talented. They shouldn't be copying data between tabs. The cost isn't just payroll. It's the deals that slip because nobody followed up. The quotes that went out late. The customers who ghosted because your response took 48 hours.
+          </p>
+        </div>
+        <div class="slide-in-right space-y-4">
+          {[
+            { label: '15 hrs/week', desc: 'Avg. time SMBs spend on automatable admin' },
+            { label: '$3,600/mo', desc: 'Cost of that time at $60/hr loaded rate' },
+            { label: '2.5x', desc: 'Revenue increase when response time drops below 1 hour' },
+            { label: '67%', desc: 'Of customers choose the first business that responds' },
+          ].map((item) => (
+            <div class="bg-gradient-to-r from-white to-gray-50 rounded-2xl p-6 border border-gray-100 flex items-center gap-6 hover:border-brand-200 hover:shadow-sm transition-all duration-300">
+              <span class="text-brand-600 font-bold text-lg whitespace-nowrap w-32 shrink-0">{item.label}</span>
+              <p class="text-gray-600 text-sm">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- What I Build -->
+  <section id="what-i-build" class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/10 to-white -z-10"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">What I Build</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">AI systems that do the work. Not dashboards you'll never open.</h2>
+        <p class="mt-4 text-gray-600 text-lg">Every system is built for your specific workflow. Not a generic tool with 200 features you don't need.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          {
+            emoji: '📝',
+            title: 'Quote & Proposal Agents',
+            desc: 'Voice notes and photos in. Branded, ready-to-send quotes out. 5 minutes instead of 45.',
+            delay: '0s'
+          },
+          {
+            emoji: '💬',
+            title: 'Customer Response Systems',
+            desc: 'Instant replies. Smart routing. Follow-up sequences that never miss. Your customers hear back in minutes, not days.',
+            delay: '0.1s'
+          },
+          {
+            emoji: '📅',
+            title: 'Intake & Scheduling Automation',
+            desc: 'New leads get qualified, booked, and prepped automatically. No back-and-forth email chains. No missed appointments.',
+            delay: '0.2s'
+          },
+          {
+            emoji: '📊',
+            title: 'Data Processing & Reporting',
+            desc: 'Photos, forms, emails, documents. Extracted, organized, and delivered where you need it. No manual entry.',
+            delay: '0.3s'
+          },
+        ].map((item) => (
+          <div class="slide-in-up bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300" style={`animation-delay: ${item.delay}`}>
+            <div class="text-4xl mb-4">{item.emoji}</div>
+            <h3 class="text-base font-bold text-gray-900">{item.title}</h3>
+            <p class="mt-2 text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- How It Works -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Process</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Live in 2 weeks. Not 6 months.</h2>
+        <p class="mt-4 text-gray-600 text-lg">No IT department required. No software to learn.</p>
+      </div>
+      <div class="max-w-4xl mx-auto">
+        <div class="space-y-8">
+          {[
+            {
+              step: '1',
+              title: 'Discovery Call (30 min)',
+              desc: 'You walk me through the workflows eating your time. I identify the 1 to 2 that will have the biggest impact.',
+              delay: '0s'
+            },
+            {
+              step: '2',
+              title: 'I Build It (1 to 2 weeks)',
+              desc: 'Custom AI system built for your specific business. Trained on your data, your pricing, your processes. Not a template.',
+              delay: '0.15s'
+            },
+            {
+              step: '3',
+              title: 'You Test It',
+              desc: 'I hand it over. You run it on real work. I adjust until it matches exactly how you operate.',
+              delay: '0.3s'
+            },
+            {
+              step: '4',
+              title: 'It Runs',
+              desc: 'The system handles the work. You review the output. Time comes back.',
+              delay: '0.45s'
+            },
+          ].map((item) => (
+            <div class="slide-in-up flex gap-6 items-start" style={`animation-delay: ${item.delay}`}>
+              <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">
+                {item.step}
+              </div>
+              <div class="flex-1 pt-2">
+                <h3 class="text-xl font-bold text-gray-900">{item.title}</h3>
+                <p class="mt-1 text-gray-600 leading-relaxed">{item.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- Who This Is For -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
+        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Who I Work With</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Small teams drowning in admin work.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        {[
+          {
+            emoji: '🔧',
+            title: 'Trade & Service Businesses',
+            desc: 'Contractors, cleaners, landscapers. You\'re on job sites all day. Admin piles up. Your AI handles it while you work.',
+            delay: '0s'
+          },
+          {
+            emoji: '💼',
+            title: 'Professional Services',
+            desc: 'Consultants, agencies, coaches. Your time IS the product. Every hour on admin is an hour you can\'t bill.',
+            delay: '0.1s'
+          },
+          {
+            emoji: '🛒',
+            title: 'E-commerce & Retail',
+            desc: 'Order processing, customer support, inventory updates. The repetitive ops work that scales linearly with revenue. Until now.',
+            delay: '0.2s'
+          },
+        ].map((item) => (
+          <div class="slide-in-up bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300" style={`animation-delay: ${item.delay}`}>
+            <div class="text-4xl mb-4">{item.emoji}</div>
+            <h3 class="text-lg font-bold text-gray-900">{item.title}</h3>
+            <p class="mt-2 text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+      <p class="text-center text-gray-600 text-lg slide-in-up" style="animation-delay: 0.3s">
+        If your team spends more than 10 hours a week on work that follows a pattern, I can automate it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- Why Me -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-5 gap-12 items-start">
+        <div class="md:col-span-2 slide-in-left md:sticky md:top-24">
+          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Why Me</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">I build what I sell. I sell what I use.</h2>
+          <p class="mt-4 text-gray-500 leading-relaxed">
+            Not theorizing. Not prompting a demo. Running it live.
+          </p>
+        </div>
+        <div class="md:col-span-3 space-y-0">
+          <div class="relative pl-8 pb-12 border-l-2 border-brand-100 slide-in-right group" style="animation-delay: 0s">
+            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
+            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Practitioner, Not Consultant</p>
+            <h3 class="text-xl font-bold text-gray-900 mt-2">I run AI systems in my own businesses every day.</h3>
+            <p class="mt-2 text-gray-600 leading-relaxed">I know where they break at 11pm on a Tuesday. That knowledge is built into every system I deliver.</p>
+          </div>
+          <div class="relative pl-8 pb-12 border-l-2 border-brand-100 slide-in-right group" style="animation-delay: 0.15s">
+            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
+            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Business First, Tech Second</p>
+            <h3 class="text-xl font-bold text-gray-900 mt-2">20 years building and running companies.</h3>
+            <p class="mt-2 text-gray-600 leading-relaxed">I understand your margins, your workflows, and your customers before I touch any technology.</p>
+          </div>
+          <div class="relative pl-8 slide-in-right group" style="animation-delay: 0.3s">
+            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
+            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Community-Tested</p>
+            <h3 class="text-xl font-bold text-gray-900 mt-2">I lead Build to Own Club.</h3>
+            <p class="mt-2 text-gray-600 leading-relaxed">A community of founders replacing manual work with AI. Every edge case, every workaround, every win gets fed back into what I build for clients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- Final CTA -->
+  <section class="py-20 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/10 to-white -z-10"></div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center slide-in-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Book a 20-minute call.</h2>
+      <p class="mt-4 text-gray-600 text-lg leading-relaxed">
+        I'll identify the workflows costing you the most time and show you exactly what automation looks like for your business. If it's not a fit, I'll tell you.
+      </p>
+      <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-brand-200 transition-all duration-300 transform hover:-translate-y-0.5 text-xl">
+        Book a Free Consultation →
+      </a>
+      <p class="mt-4 text-sm text-gray-400">No commitment. No pitch deck. Just the workflow.</p>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+
+  <!-- Build to Own Club (bottom, soft) -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="bg-gradient-to-br from-white to-brand-50/40 rounded-2xl p-8 border border-brand-100/60 flex flex-col md:flex-row items-center gap-6 slide-in-up">
+        <div class="flex-1 text-center md:text-left">
+          <p class="text-brand-600 font-semibold text-xs tracking-widest uppercase mb-1">Community</p>
+          <h3 class="text-xl font-bold text-gray-900">Build to Own Club</h3>
+          <p class="mt-2 text-gray-600 text-sm leading-relaxed">
+            Want to build your own AI systems? Join a growing community of founders and operators building and owning their own automated workflows.
+          </p>
+        </div>
+        <a href="/contact" class="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-600 font-semibold rounded-lg border border-brand-200 hover:border-brand-400 hover:shadow-sm transition-all duration-300 whitespace-nowrap">
+          Learn More →
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .slide-in-left,
+  .slide-in-right,
+  .slide-in-up {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .slide-in-left {
+    transform: translateX(-40px);
+  }
+  .slide-in-right {
+    transform: translateX(40px);
+  }
+  .slide-in-up {
+    transform: translateY(30px);
+  }
+  .slide-in-left.visible,
+  .slide-in-right.visible,
+  .slide-in-up.visible {
+    opacity: 1;
+    transform: translate(0);
+  }
+</style>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+  );
+
+  document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up').forEach((el) => {
+    observer.observe(el);
+  });
+</script>
