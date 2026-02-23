@@ -2,6 +2,9 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+## 2025-07-17
+- /ai: absorbed B2O cost content — SaaS waste stats ($8,700/yr, 49% unused, 16 hrs/week) in stat cards, before/after diff card section, cost waste paragraph in The Shift copy. Fixed B2O cross-link URL. (Crash & Burn)
+
 ## 2026-07-18
 - Restructured /ai page: moved contractor-specific content to /ai/contractors, created new generic AI consulting landing page at /ai with 8 sections (Crash & Burn)
 - Fixed hero headline forced line break for better text flow (Crash & Burn)
@@ -9,6 +12,7 @@
 - Redesigned stat cards: 2x2 grid with large bold numbers, accent bars, hover effects (Crash & Burn)
 
 ## 2026-02-23
+- Fixed B2O cross-link: "Learn More →" in /ai B2O card now points to https://buildtoown.club (was /contact) (Crash & Burn)
 
 ## 2026-02-19
 - Merged foreclosure-bot/ into richkapp.com as subdirectory (Zeno)
