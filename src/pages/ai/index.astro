@@ -52,16 +52,17 @@ import Layout from '../../layouts/Layout.astro';
             The question isn't whether AI will change your industry. It's whether you'll be the one using it or the one losing to it.
           </p>
         </div>
-        <div class="slide-in-right space-y-4">
+        <div class="slide-in-right grid grid-cols-2 gap-4">
           {[
             { label: '72%', desc: 'Of small businesses plan to adopt AI tools by 2026' },
             { label: '2.5x', desc: 'Revenue increase when response time drops below 1 hour' },
             { label: '67%', desc: 'Of customers choose the first business that responds' },
             { label: '10x', desc: 'Faster proposal turnaround with AI-assisted workflows' },
-          ].map((item) => (
-            <div class="bg-gradient-to-r from-white to-gray-50 rounded-2xl p-6 border border-gray-100 flex items-center gap-6 hover:border-brand-200 hover:shadow-sm transition-all duration-300">
-              <span class="text-brand-600 font-bold text-lg whitespace-nowrap w-32 shrink-0">{item.label}</span>
-              <p class="text-gray-600 text-sm">{item.desc}</p>
+          ].map((item, i) => (
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300 group">
+              <span class="block text-4xl md:text-5xl font-extrabold text-brand-600 group-hover:text-brand-700 transition-colors duration-300">{item.label}</span>
+              <div class="mt-3 w-8 h-1 bg-brand-100 rounded-full group-hover:w-12 group-hover:bg-brand-300 transition-all duration-300"></div>
+              <p class="mt-3 text-gray-500 text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
