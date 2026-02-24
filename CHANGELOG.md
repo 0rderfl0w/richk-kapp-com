@@ -2,6 +2,20 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+## 2026-02-24
+- Contact page redesign: "Quiet Technical Confidence" design system applied. Replaced gray palette with slate, font-mono section labels (PROCESS, LOCATION), editorial numbered steps (01/02/03) replacing icon badges, layered shadow hover on LinkedIn card, gradient bloom hero matching other pages, emerald success states, compact button sizing. All content and Web3Forms integration preserved. (Crash & Burn)
+
+## 2025-07-27
+- Full visual redesign of advisory page: font-display headings, mono section labels (01–05 Service), mono pill focus area tags replacing inline text, layered shadow approach cards, removed gradient icon boxes and divider lines, alternating white/slate-50 sections, branded bottom CTA section. (Crash & Burn)
+- Full visual redesign of landing page: "Quiet Technical Confidence" design system applied. font-display headings, mono section labels, editorial numbered service list replacing emoji-card grid, editorial data section with stat-forward layout (↑, 50%, 3x), layered shadow cards, mono pill credential tags, branded CTA section replacing generic bottom quote. Fixed broken HTML in bottom quote. Removed decorative hero blobs. (Crash & Burn)
+- Full visual redesign of /ai page: "Quiet Technical Confidence" direction. Plus Jakarta Sans headings, JetBrains Mono for labels/stats/code. Mono uppercase section labels. Editorial numbered service list replacing card grid. Styled code block in How It Works section. Layered shadow card system. Amber accent on key stat. Slate color palette replacing generic grays. Single branded CTA section. Before/After with transformation arrow. Tailwind config updated with display/mono font families and layered shadow utilities. (Crash & Burn)
+
+## 2025-07-18
+- Full rewrite of /ai page with Hormozi-style sales flow (Alex). New structure: Dream outcome hero → Competitive fear → Empowerment anchor → Pain math → Offer stack → Before/after → How it works → Credibility → Qualification → Guarantee → CTA → B2O community card. All copy reframed around empowerment (never replacement). Image placeholders included for Z to fill.
+## 2026-02-24
+- Rewrote /ai landing page copy with Dream Outcome + Fear lens: 12 sections with updated emotional arc (Hero dream framing, Pain Math treasure map, new Fear/Competitor section, dream-outcome card titles, updated "for you" list). No dark backgrounds, no em dashes, no exclamation points. IntersectionObserver animations and all design patterns preserved. Build verified clean. (Claude-Code/Subagent)
+- Rewrote /ai landing page as Hormozi-style sales page per spec: 11 sections (Hero, Pain Math, Reframe, Offer Stack, Before/After, How It Works, Proof/Credibility, Who This Is Not For, Guarantee, Final CTA, Build to Own Club). White theme, brand colors, IntersectionObserver animations preserved. Build verified clean. (Alex/Subagent)
+
 ## 2025-07-17
 - /ai: absorbed B2O cost content — SaaS waste stats ($8,700/yr, 49% unused, 16 hrs/week) in stat cards, before/after diff card section, cost waste paragraph in The Shift copy. Fixed B2O cross-link URL. (Crash & Burn)
 

@@ -4,3 +4,4 @@ dist/
 
 # Foreclosure bot Python venv
 foreclosure-bot/.venv/
+src/pages/ai/index.astro.bak

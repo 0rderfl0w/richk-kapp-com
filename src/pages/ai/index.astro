@@ -2,345 +2,456 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="AI Integration Consulting | Richard Kappel" description="Custom AI systems that handle the repetitive work your team does every day. Quoting, scheduling, customer follow-up, data entry. Book a free consultation.">
+<Layout title="AI Integration Consulting | Richard Kappel" description="Custom AI systems that give your team back the hours buried in busywork. Quoting, scheduling, customer follow-up, data entry. Book a free automation audit.">
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-gradient-to-br from-white via-brand-50/30 to-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28">
-      <div class="max-w-3xl mx-auto text-center animate-fade-in">
-        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-4">AI Integration Consulting</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
-          Your business runs on manual work. I replace it with AI.
-        </h1>
-        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          I build custom AI systems that handle the repetitive work your team does every day. Quoting, scheduling, customer follow-up, data entry. Gone.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-brand-200 transition-all duration-300 transform hover:-translate-y-0.5 text-lg">
-            Book a Free Consultation →
-          </a>
-          <a href="#what-i-build" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-brand-600 font-semibold rounded-lg border border-brand-200 hover:border-brand-400 transition-all duration-300 text-lg">
-            See What I Build ↓
-          </a>
+  <!-- 1. HERO -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-50/60 via-white to-white -z-10"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-brand-500/[0.04] rounded-full blur-3xl -z-10"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 pt-24 md:pt-32 pb-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="animate-fade-in">
+          <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-5">AI Integration Consulting</p>
+          <h1 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-slate-900">
+            What would you do with 16 extra hours every week?
+          </h1>
+          <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+            Use it to finally open that second location. Be home for dinner instead of doing quotes at 9pm. Triple your pipeline without hiring a single person.
+          </p>
+          <p class="mt-4 text-lg text-slate-600 leading-relaxed">
+            Those hours are already in your business. Buried under work that doesn't need a human. I find them and give them back.
+          </p>
+          <div class="mt-10 flex flex-wrap items-center gap-4">
+            <a href="/contact" class="btn-primary inline-flex items-center justify-center px-7 py-3.5 bg-brand-600 text-white font-semibold rounded-lg hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-200 transition-all duration-200">
+              Find Your 16 Hours
+            </a>
+            <a href="#how-it-works" class="inline-flex items-center gap-1.5 px-4 py-3.5 text-slate-500 font-medium hover:text-brand-600 transition-colors duration-200">
+              See How It Works ↓
+            </a>
+          </div>
+        </div>
+        <div class="slide-in-right">
+          <div class="flex items-center justify-center">
+            <img src="/hero-animation.svg" alt="16 hours reclaimed every week" class="w-full max-w-[420px]" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="absolute top-20 right-10 w-64 h-64 bg-brand-50 rounded-full blur-3xl opacity-40 -z-10"></div>
-    <div class="absolute bottom-10 left-10 w-48 h-48 bg-brand-100/50 rounded-full blur-2xl opacity-30 -z-10"></div>
   </section>
 
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
+  <!-- 2. THE FEAR — COMPETITIVE PRESSURE -->
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Competitive Pressure</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Your competitors aren't waiting.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="slide-in-left space-y-5 text-slate-600 text-lg leading-relaxed">
+          <p>
+            While you're reading this, someone in your market already has this running.
+          </p>
+          <p>
+            They're responding to leads in 90 seconds while you check voicemail at lunch. They're sending quotes from the truck while you do them at the kitchen table at 9pm. They're not smarter. They're not bigger. They automated first.
+          </p>
+          <p>
+            Every week you wait, the gap gets wider. Not by a little. By the compound effect of speed, consistency, and follow-through.
+          </p>
+          <p>
+            This isn't about keeping up with technology. It's about keeping up with the business down the street that figured this out six months ago.
+          </p>
+          <p class="text-xl font-semibold text-slate-900 pt-2 border-l-[3px] border-brand-500 pl-5">
+            The question isn't whether AI changes your industry. It's whether you're the one using it or the one losing to it.
+          </p>
+        </div>
+        <div class="slide-in-right">
+          <div class="flex items-center justify-center p-4">
+            <img src="/hourglass-time.svg" alt="Time slipping away — the hours you lose don't come back" class="w-full max-w-[280px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- The Shift -->
+  <!-- 3. THE EMPOWERMENT ANCHOR -->
   <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div class="slide-in-left">
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Landscape</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Your competitors are already using AI. That gap widens every month.</h2>
-          <p class="mt-6 text-gray-600 text-lg leading-relaxed">
-            This isn't coming. It's here. Your competitors are quoting faster, responding to leads in minutes, and processing work while they sleep. Not because they hired more people. Because they plugged in AI.
-          </p>
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            Meanwhile, you're spending thousands on bloated software your team barely uses. Half those licenses sit untouched. The average business burns $8,700 per employee per year on SaaS. That money could fund automation that actually fits your workflow.
-          </p>
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            Every month you wait, the gap gets wider. The businesses adopting now are compounding their advantage. Faster quotes. Faster follow-up. Faster everything.
-          </p>
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            This isn't about replacing your team. It's about making them dangerous. One person doing the output of three. Not by working harder. By working with better tools.
-          </p>
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            The question isn't whether AI will change your industry. It's whether you'll be the one using it or the one losing to it.
-          </p>
-        </div>
-        <div class="slide-in-right grid grid-cols-2 gap-4">
-          {[
-            { label: '$8,700', desc: 'Per employee per year spent on SaaS tools they barely use (Zylo 2024)' },
-            { label: '49%', desc: 'Of SaaS licenses go completely unused. You\'re paying for 200 features to use 3.' },
-            { label: '16 hrs', desc: 'Per week your team loses to admin tasks that automation handles in minutes' },
-            { label: '67%', desc: 'Of customers choose the first business that responds. Speed wins deals.' },
-          ].map((item, i) => (
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300 group">
-              <span class="block text-4xl md:text-5xl font-extrabold text-brand-600 group-hover:text-brand-700 transition-colors duration-300">{item.label}</span>
-              <div class="mt-3 w-8 h-1 bg-brand-100 rounded-full group-hover:w-12 group-hover:bg-brand-300 transition-all duration-300"></div>
-              <p class="mt-3 text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Before/After -->
-  <section class="py-16 bg-gradient-to-b from-white via-brand-50/20 to-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="text-center mb-10 slide-in-up">
-        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Difference</p>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900">What happens when we automate your workflows.</h2>
+      <div class="slide-in-up text-center mb-10">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Philosophy</p>
+        <h2 class="font-display text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          This isn't about cutting your team.<br class="hidden md:block" /> It's about unleashing them.
+        </h2>
       </div>
-      <div class="grid md:grid-cols-2 gap-6 slide-in-up" style="animation-delay: 0.15s">
-        <div class="bg-white rounded-2xl p-8 border border-red-100 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-full h-1 bg-red-400"></div>
-          <p class="text-red-500 font-bold text-xs tracking-widest uppercase mb-6">Before</p>
-          <div class="space-y-4">
-            {[
-              { label: 'SaaS stack', val: '$852/mo' },
-              { label: 'Quote turnaround', val: '45 minutes' },
-              { label: 'Lead response', val: 'Hours or days' },
-              { label: 'Admin time', val: '16 hrs/week' },
-              { label: 'Tools you control', val: '0' },
-            ].map((row) => (
-              <div class="flex justify-between items-center border-b border-gray-100 pb-3">
-                <span class="text-gray-600 text-sm">{row.label}</span>
-                <span class="text-gray-900 font-semibold text-sm">{row.val}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div class="bg-white rounded-2xl p-8 border border-green-100 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-full h-1 bg-green-500"></div>
-          <p class="text-green-600 font-bold text-xs tracking-widest uppercase mb-6">After</p>
-          <div class="space-y-4">
-            {[
-              { label: 'Custom AI tools', val: '~$15/mo' },
-              { label: 'Quote turnaround', val: '5 minutes' },
-              { label: 'Lead response', val: 'Instant' },
-              { label: 'Admin time', val: '2 hrs/week' },
-              { label: 'Tools you control', val: 'All of them' },
-            ].map((row) => (
-              <div class="flex justify-between items-center border-b border-gray-100 pb-3">
-                <span class="text-gray-600 text-sm">{row.label}</span>
-                <span class="text-green-700 font-bold text-sm">{row.val}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-      <p class="text-center text-gray-500 text-sm mt-6 slide-in-up" style="animation-delay: 0.3s">Real numbers from real client engagements.</p>
-    </div>
-  </section>
-
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- What I Build -->
-  <section id="what-i-build" class="py-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/10 to-white -z-10"></div>
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
-        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">What I Build</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">AI systems that do the work. Not dashboards you'll never open.</h2>
-        <p class="mt-4 text-gray-600 text-lg">Every system is built for your specific workflow. Not a generic tool with 200 features you don't need.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          {
-            emoji: '📝',
-            title: 'Quote & Proposal Agents',
-            desc: 'Voice notes and photos in. Branded, ready-to-send quotes out. 5 minutes instead of 45.',
-            delay: '0s'
-          },
-          {
-            emoji: '💬',
-            title: 'Customer Response Systems',
-            desc: 'Instant replies. Smart routing. Follow-up sequences that never miss. Your customers hear back in minutes, not days.',
-            delay: '0.1s'
-          },
-          {
-            emoji: '📅',
-            title: 'Intake & Scheduling Automation',
-            desc: 'New leads get qualified, booked, and prepped automatically. No back-and-forth email chains. No missed appointments.',
-            delay: '0.2s'
-          },
-          {
-            emoji: '📊',
-            title: 'Data Processing & Reporting',
-            desc: 'Photos, forms, emails, documents. Extracted, organized, and delivered where you need it. No manual entry.',
-            delay: '0.3s'
-          },
-        ].map((item) => (
-          <div class="slide-in-up bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300" style={`animation-delay: ${item.delay}`}>
-            <div class="text-4xl mb-4">{item.emoji}</div>
-            <h3 class="text-base font-bold text-gray-900">{item.title}</h3>
-            <p class="mt-2 text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-          </div>
-        ))}
+      <div class="slide-in-up space-y-5 text-slate-600 text-lg leading-relaxed" style="animation-delay: 0.15s">
+        <p>
+          Let's be clear. I don't build these tools to take anyone's job. I build them to take over the part of the job nobody wanted in the first place.
+        </p>
+        <p>
+          Your best salesperson shouldn't be copying data into spreadsheets. Your office manager shouldn't spend three hours a day on emails that all say the same thing. Your field team shouldn't be doing paperwork at 9pm.
+        </p>
+        <p>
+          When you remove the busywork, something happens. People get creative. They build relationships. They solve problems. They do the work they were actually hired to do.
+        </p>
+        <p>
+          A 3-person team with the output of 10. Not because they work harder. Because they finally have the time to work on what matters.
+        </p>
+        <p class="text-xl font-semibold text-slate-900 pt-4">
+          Better tools make better teams. That's the whole philosophy.
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- How It Works -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
-        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">The Process</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Live in 2 weeks. Not 6 months.</h2>
-        <p class="mt-4 text-gray-600 text-lg">No IT department required. No software to learn.</p>
-      </div>
-      <div class="max-w-4xl mx-auto">
-        <div class="space-y-8">
-          {[
-            {
-              step: '1',
-              title: 'Discovery Call (30 min)',
-              desc: 'You walk me through the workflows eating your time. I identify the 1 to 2 that will have the biggest impact.',
-              delay: '0s'
-            },
-            {
-              step: '2',
-              title: 'I Build It (1 to 2 weeks)',
-              desc: 'Custom AI system built for your specific business. Trained on your data, your pricing, your processes. Not a template.',
-              delay: '0.15s'
-            },
-            {
-              step: '3',
-              title: 'You Test It',
-              desc: 'I hand it over. You run it on real work. I adjust until it matches exactly how you operate.',
-              delay: '0.3s'
-            },
-            {
-              step: '4',
-              title: 'It Runs',
-              desc: 'The system handles the work. You review the output. Time comes back.',
-              delay: '0.45s'
-            },
-          ].map((item) => (
-            <div class="slide-in-up flex gap-6 items-start" style={`animation-delay: ${item.delay}`}>
-              <div class="w-10 h-10 bg-brand-600 text-white rounded-full flex items-center justify-center font-bold text-sm shrink-0">
-                {item.step}
-              </div>
-              <div class="flex-1 pt-2">
-                <h3 class="text-xl font-bold text-gray-900">{item.title}</h3>
-                <p class="mt-1 text-gray-600 leading-relaxed">{item.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- Who This Is For -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
-        <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Who I Work With</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Small teams drowning in admin work.</h2>
+  <!-- 4. PAIN MATH — WHERE THE HOURS ARE HIDING -->
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">The Math</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">16 hours didn't disappear. Here's where they went.</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-6 mb-12">
-        {[
-          {
-            emoji: '🔧',
-            title: 'Trade & Service Businesses',
-            desc: 'Contractors, cleaners, landscapers. You\'re on job sites all day. Admin piles up. Your AI handles it while you work.',
-            delay: '0s'
-          },
-          {
-            emoji: '💼',
-            title: 'Professional Services',
-            desc: 'Consultants, agencies, coaches. Your time IS the product. Every hour on admin is an hour you can\'t bill.',
-            delay: '0.1s'
-          },
-          {
-            emoji: '🛒',
-            title: 'E-commerce & Retail',
-            desc: 'Order processing, customer support, inventory updates. The repetitive ops work that scales linearly with revenue. Until now.',
-            delay: '0.2s'
-          },
-        ].map((item) => (
-          <div class="slide-in-up bg-white rounded-2xl p-8 border border-gray-100 hover:border-brand-200 hover:shadow-lg transition-all duration-300" style={`animation-delay: ${item.delay}`}>
-            <div class="text-4xl mb-4">{item.emoji}</div>
-            <h3 class="text-lg font-bold text-gray-900">{item.title}</h3>
-            <p class="mt-2 text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+        <div class="slide-in-up stat-card bg-white rounded-xl p-8 shadow-layered border border-slate-100 hover:shadow-layered-lg hover:-translate-y-1 transition-all duration-300 text-center">
+          <div class="flex items-baseline justify-center gap-1">
+            <span class="font-mono text-5xl font-bold tabular-nums text-brand-600">$4,200</span>
+            <span class="font-mono text-base text-slate-400">/mo</span>
           </div>
-        ))}
+          <div class="mt-4 w-10 h-[2px] bg-brand-500 mx-auto"></div>
+          <p class="mt-4 text-slate-600 leading-relaxed">What manual admin costs a 5-person team. Every month. That's $50,400 a year buried in work that should take minutes.</p>
+        </div>
+        <div class="slide-in-up stat-card bg-white rounded-xl p-8 shadow-layered border border-slate-100 hover:shadow-layered-lg hover:-translate-y-1 transition-all duration-300 text-center" style="animation-delay: 0.1s">
+          <div class="flex items-baseline justify-center gap-1.5">
+            <span class="font-mono text-5xl font-bold tabular-nums text-brand-600">23</span>
+            <span class="font-mono text-base text-slate-400">min</span>
+          </div>
+          <div class="mt-4 w-10 h-[2px] bg-brand-500 mx-auto"></div>
+          <p class="mt-4 text-slate-600 leading-relaxed">To refocus after one interruption. Your best people get pulled out of real work 31 times a day. For tasks that follow a pattern.</p>
+        </div>
+        <div class="slide-in-up stat-card bg-white rounded-xl p-8 shadow-layered border border-slate-100 hover:shadow-layered-lg hover:-translate-y-1 transition-all duration-300 text-center" style="animation-delay: 0.2s">
+          <div class="flex items-baseline justify-center gap-1.5">
+            <span class="font-mono text-5xl font-bold tabular-nums text-amber-500">67</span>
+            <span class="font-mono text-base text-slate-400">% choose first</span>
+          </div>
+          <div class="mt-4 w-10 h-[2px] bg-amber-400 mx-auto"></div>
+          <p class="mt-4 text-slate-600 leading-relaxed">Of customers choose the first business that responds. Every hour your team spends on admin is an hour a faster competitor is winning the deal.</p>
+        </div>
       </div>
-      <p class="text-center text-gray-600 text-lg slide-in-up" style="animation-delay: 0.3s">
-        If your team spends more than 10 hours a week on work that follows a pattern, I can automate it.
-      </p>
+      <div class="max-w-3xl mx-auto slide-in-up" style="animation-delay: 0.3s">
+        <p class="text-slate-500 text-lg leading-relaxed text-center">
+          These hours aren't gone. They're trapped in pattern work. Same emails. Same quotes. Same follow-ups that should have gone out yesterday. Free them first, and the advantage compounds. Wait, and you fall behind.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- Why Me -->
+  <!-- 5. WHAT YOU GET — EDITORIAL NUMBERED LIST -->
   <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <div class="grid md:grid-cols-5 gap-12 items-start">
-        <div class="md:col-span-2 slide-in-left md:sticky md:top-24">
-          <p class="text-brand-600 font-semibold text-sm tracking-widest uppercase mb-2">Why Me</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">I build what I sell. I sell what I use.</h2>
-          <p class="mt-4 text-gray-500 leading-relaxed">
-            Not theorizing. Not prompting a demo. Running it live.
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">What I Build</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">What I build for you.</h2>
+        <p class="mt-4 text-slate-500 text-lg">Every system is built for your workflows, your data, your business. Nothing off the shelf.</p>
+      </div>
+      <div class="space-y-0 slide-in-up" style="animation-delay: 0.1s">
+        <!-- Service 1 -->
+        <div class="service-item group border-t border-slate-200 py-8 grid md:grid-cols-[4rem_1fr_auto] gap-4 md:gap-8 items-start hover:bg-slate-50/50 -mx-4 px-4 md:-mx-8 md:px-8 transition-colors duration-200 rounded-lg">
+          <span class="font-mono text-sm text-slate-300 pt-1">01</span>
+          <div>
+            <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Quote from the job site. Be home by 5.</h3>
+            <p class="mt-2 text-slate-500 leading-relaxed">Voice notes and photos in. Branded, line-item quotes out. What used to take 45 minutes now takes 5. The kitchen table at 9pm is over.</p>
+          </div>
+          <span class="font-mono text-xs text-brand-600 bg-brand-50 px-3 py-1 rounded-full whitespace-nowrap self-start">$3,000 value</span>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-item group border-t border-slate-200 py-8 grid md:grid-cols-[4rem_1fr_auto] gap-4 md:gap-8 items-start hover:bg-slate-50/50 -mx-4 px-4 md:-mx-8 md:px-8 transition-colors duration-200 rounded-lg">
+          <span class="font-mono text-sm text-slate-300 pt-1">02</span>
+          <div>
+            <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Every lead gets a reply in under 2 minutes. Even at 2am.</h3>
+            <p class="mt-2 text-slate-500 leading-relaxed">Smart routing sends hot leads to the right person. Follow-up sequences run on autopilot. No lead falls through the cracks. No deal lost to a slow reply.</p>
+          </div>
+          <span class="font-mono text-xs text-brand-600 bg-brand-50 px-3 py-1 rounded-full whitespace-nowrap self-start">$2,500 value</span>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-item group border-t border-slate-200 py-8 grid md:grid-cols-[4rem_1fr_auto] gap-4 md:gap-8 items-start hover:bg-slate-50/50 -mx-4 px-4 md:-mx-8 md:px-8 transition-colors duration-200 rounded-lg">
+          <span class="font-mono text-sm text-slate-300 pt-1">03</span>
+          <div>
+            <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Leads book themselves. Your team shows up prepared.</h3>
+            <p class="mt-2 text-slate-500 leading-relaxed">New leads get qualified, booked, and prepped without a single email chain. Calendar sync. Automatic reminders. The back-and-forth is gone.</p>
+          </div>
+          <span class="font-mono text-xs text-brand-600 bg-brand-50 px-3 py-1 rounded-full whitespace-nowrap self-start">$2,000 value</span>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-item group border-t border-slate-200 py-8 grid md:grid-cols-[4rem_1fr_auto] gap-4 md:gap-8 items-start hover:bg-slate-50/50 -mx-4 px-4 md:-mx-8 md:px-8 transition-colors duration-200 rounded-lg border-b">
+          <span class="font-mono text-sm text-slate-300 pt-1">04</span>
+          <div>
+            <h3 class="font-display text-xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">Reports build themselves. Data entry disappears.</h3>
+            <p class="mt-2 text-slate-500 leading-relaxed">Photos, forms, emails, documents. Extracted, organized, delivered where your team needs it. Weekly reports generated automatically. Your team reviews, not compiles.</p>
+          </div>
+          <span class="font-mono text-xs text-brand-600 bg-brand-50 px-3 py-1 rounded-full whitespace-nowrap self-start">$1,500 value</span>
+        </div>
+      </div>
+      <div class="text-center mt-10 slide-in-up" style="animation-delay: 0.3s">
+        <p class="text-lg font-semibold text-slate-900">Total value: <span class="font-mono text-brand-600">$9,000+</span> per engagement</p>
+        <p class="mt-2 text-slate-500">Most businesses need 2 to 3 of these. We start with the one that gives you the most time back.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. BEFORE / AFTER -->
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Results</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">What changes in 30 days.</h2>
+      </div>
+      <div class="grid md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-0 items-stretch slide-in-up" style="animation-delay: 0.15s">
+        <div class="bg-white rounded-xl p-8 border border-red-100 shadow-layered relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-300 to-red-400"></div>
+          <p class="text-red-500 font-mono text-xs tracking-widest uppercase mb-6">Before</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Quote turnaround', val: '45 minutes' },
+              { label: 'Lead response', val: 'Hours or next day' },
+              { label: 'Admin time', val: '16+ hrs/week' },
+              { label: 'Missed follow-ups', val: 'Weekly' },
+              { label: 'Team capacity', val: 'Maxed out' },
+            ].map((row) => (
+              <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <span class="text-slate-500 text-sm">{row.label}</span>
+                <span class="text-slate-900 font-medium text-sm font-mono">{row.val}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <!-- Arrow -->
+        <div class="hidden md:flex items-center justify-center px-4">
+          <div class="w-10 h-10 bg-brand-600 rounded-full flex items-center justify-center shadow-lg shadow-brand-200">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-8 border border-green-100 shadow-layered relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-400 to-emerald-500"></div>
+          <p class="text-green-600 font-mono text-xs tracking-widest uppercase mb-6">After</p>
+          <div class="space-y-4">
+            {[
+              { label: 'Quote turnaround', val: 'Under 5 minutes' },
+              { label: 'Lead response', val: 'Under 2 minutes' },
+              { label: 'Admin time', val: '2 hrs/week' },
+              { label: 'Missed follow-ups', val: 'Zero' },
+              { label: 'Team capacity', val: '3x output, same headcount' },
+            ].map((row) => (
+              <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+                <span class="text-slate-500 text-sm">{row.label}</span>
+                <span class="text-green-700 font-semibold text-sm font-mono">{row.val}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-slate-700 text-lg font-semibold mt-10 slide-in-up" style="animation-delay: 0.3s">That's <span class="font-mono text-brand-600">14 hours a week</span>. Back in your hands.</p>
+    </div>
+  </section>
+
+  <!-- 7. HOW IT WORKS -->
+  <section id="how-it-works" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Process</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Live in 2 weeks. Not 6 months.</h2>
+        <p class="mt-4 text-slate-500 text-lg">No IT department required. No software to learn. No disruption.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left: Steps -->
+        <div class="space-y-0">
+          {[
+            {
+              step: '01',
+              title: 'Free Automation Audit (30 min)',
+              desc: 'Walk me through your week. I\'ll find the 2 to 3 workflows eating the most time and money. You leave knowing exactly what to automate first and how many hours come back. Even if we never work together.',
+            },
+            {
+              step: '02',
+              title: 'I Build It (1 to 2 weeks)',
+              desc: 'Custom AI system built around your specific processes. Your pricing, your templates, your workflows. Not a generic tool with 200 features you won\'t use.',
+            },
+            {
+              step: '03',
+              title: 'You Test It On Real Work',
+              desc: 'I hand it over. You and your team run it on live jobs. I adjust until it matches exactly how you operate. Nothing launches until you\'re confident.',
+            },
+            {
+              step: '04',
+              title: 'It Runs. You Get Your Time Back.',
+              desc: 'The system handles the pattern work. Your team focuses on what matters. Revenue capacity goes up. You decide what to do with the hours.',
+            },
+          ].map((item, i) => (
+            <div class={`slide-in-left py-6 ${i < 3 ? 'border-b border-slate-100' : ''}`} style={`animation-delay: ${i * 0.1}s`}>
+              <div class="flex gap-4 items-start">
+                <span class="font-mono text-xs text-brand-500 pt-1.5 shrink-0">{item.step}</span>
+                <div>
+                  <h3 class="font-display text-lg font-bold text-slate-900">{item.title}</h3>
+                  <p class="mt-1.5 text-slate-500 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <!-- Right: Code block -->
+        <div class="slide-in-right">
+          <div class="bg-slate-900 rounded-xl p-6 shadow-layered-lg overflow-hidden">
+            <div class="flex items-center gap-2 mb-4">
+              <div class="w-3 h-3 rounded-full bg-red-400/80"></div>
+              <div class="w-3 h-3 rounded-full bg-amber-400/80"></div>
+              <div class="w-3 h-3 rounded-full bg-green-400/80"></div>
+              <span class="ml-2 font-mono text-[11px] text-slate-500">quote-agent.py</span>
+            </div>
+            <pre class="font-mono text-[13px] leading-relaxed overflow-x-auto"><code><span class="text-slate-500"># Your quote agent — built for your workflow</span>
+<span class="text-purple-400">from</span> <span class="text-blue-300">agent</span> <span class="text-purple-400">import</span> <span class="text-blue-300">QuoteAgent</span>
+
+<span class="text-slate-300">agent</span> <span class="text-slate-500">=</span> <span class="text-blue-300">QuoteAgent</span><span class="text-slate-400">(</span>
+    <span class="text-amber-300">pricing</span><span class="text-slate-500">=</span><span class="text-green-300">"your_rates.csv"</span><span class="text-slate-400">,</span>
+    <span class="text-amber-300">template</span><span class="text-slate-500">=</span><span class="text-green-300">"branded_quote.pdf"</span><span class="text-slate-400">,</span>
+    <span class="text-amber-300">voice_input</span><span class="text-slate-500">=</span><span class="text-orange-300">True</span><span class="text-slate-400">,</span>
+    <span class="text-amber-300">auto_followup</span><span class="text-slate-500">=</span><span class="text-orange-300">True</span>
+<span class="text-slate-400">)</span>
+
+<span class="text-slate-500"># Voice note from job site → branded quote</span>
+<span class="text-slate-300">quote</span> <span class="text-slate-500">=</span> <span class="text-slate-300">agent</span><span class="text-slate-400">.</span><span class="text-blue-300">generate</span><span class="text-slate-400">(</span>
+    <span class="text-amber-300">input</span><span class="text-slate-500">=</span><span class="text-green-300">"voice_note_0472.m4a"</span><span class="text-slate-400">,</span>
+    <span class="text-amber-300">photos</span><span class="text-slate-500">=</span><span class="text-slate-400">[</span><span class="text-green-300">"site_1.jpg"</span><span class="text-slate-400">,</span> <span class="text-green-300">"site_2.jpg"</span><span class="text-slate-400">]</span>
+<span class="text-slate-400">)</span>
+
+<span class="text-slate-300">quote</span><span class="text-slate-400">.</span><span class="text-blue-300">send_to_client</span><span class="text-slate-400">()</span>  <span class="text-slate-500"># 4 min, not 45</span></code></pre>
+          </div>
+          <p class="mt-3 text-center text-xs text-slate-400 font-mono">Built for your business. Not a generic SaaS.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. PROOF / CREDIBILITY -->
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Credibility</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Built by someone who ships.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="slide-in-left space-y-5 text-slate-600 text-lg leading-relaxed">
+          <p>I don't talk about AI. I build with it. Every day.</p>
+          <p>I shipped a full SaaS platform in weeks. No development team. No contractors. AI and 20 years of knowing how businesses actually run.</p>
+          <p>I run Build to Own Club, a community of founders building their own AI tools. Every edge case, every workaround, every win gets fed back into every system I build.</p>
+          <p>20 years building companies across 11 countries. I understand margins, workflows, and customers before I touch any technology.</p>
+          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-2">
+            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">20 Years in Business</span>
+            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">11 Countries</span>
+            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">100+ Builders Community</span>
+          </div>
+        </div>
+        <div class="slide-in-right">
+          <div class="bg-white rounded-2xl overflow-hidden min-h-[300px]">
+            <img src="/richard-kappel.jpg" alt="Richard Kappel" class="w-full h-full object-cover rounded-2xl" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. WHO THIS IS NOT FOR -->
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 slide-in-up">
+        <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-3">Fit Check</p>
+        <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900">This isn't for everyone.</h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="slide-in-left bg-white rounded-xl p-8 border border-slate-100 shadow-layered">
+          <p class="text-green-600 font-mono text-xs tracking-widest uppercase mb-6">This is for you if:</p>
+          <ul class="space-y-4">
+            {[
+              'You know exactly what you\'d do with 10 more hours a week',
+              'You\'re growing but can\'t hire fast enough',
+              'You want your people doing the work that actually grows the business',
+              'You\'re done throwing bodies at problems',
+              'You want to own the tools you use, not rent them',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <span class="text-green-500 text-lg shrink-0">✓</span>
+                <span class="text-slate-600 leading-snug">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="slide-in-right bg-white rounded-xl p-8 border border-slate-100 shadow-layered">
+          <p class="text-red-500 font-mono text-xs tracking-widest uppercase mb-6">This is NOT for you if:</p>
+          <ul class="space-y-4">
+            {[
+              'You want to "experiment" with AI without a business goal',
+              'You\'re looking for the cheapest option',
+              'You don\'t have repeatable workflows yet',
+              'You want a chatbot for your website (that\'s not what I do)',
+            ].map((item) => (
+              <li class="flex items-start gap-3">
+                <span class="text-red-400 text-lg shrink-0">✗</span>
+                <span class="text-slate-600 leading-snug">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. GUARANTEE -->
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="slide-in-up">
+        <div class="guarantee-card bg-white rounded-xl p-10 shadow-layered text-center relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-brand-500 via-brand-600 to-brand-500"></div>
+          <div class="mb-6">
+            <svg class="w-12 h-12 mx-auto text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-4">Guarantee</p>
+          <h2 class="font-display text-2xl md:text-3xl font-bold text-slate-900 mb-6">The guarantee.</h2>
+          <p class="text-slate-600 text-lg leading-relaxed">
+            If the system I build doesn't save your team at least 10 hours in the first month, I'll rebuild it. Free. And if you're still not satisfied, full refund. No questions. No awkwardness. I don't keep money I didn't earn.
           </p>
         </div>
-        <div class="md:col-span-3 space-y-0">
-          <div class="relative pl-8 pb-12 border-l-2 border-brand-100 slide-in-right group" style="animation-delay: 0s">
-            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
-            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Practitioner, Not Consultant</p>
-            <h3 class="text-xl font-bold text-gray-900 mt-2">I run AI systems in my own businesses every day.</h3>
-            <p class="mt-2 text-gray-600 leading-relaxed">I know where they break at 11pm on a Tuesday. That knowledge is built into every system I deliver.</p>
-          </div>
-          <div class="relative pl-8 pb-12 border-l-2 border-brand-100 slide-in-right group" style="animation-delay: 0.15s">
-            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
-            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Business First, Tech Second</p>
-            <h3 class="text-xl font-bold text-gray-900 mt-2">20 years building and running companies.</h3>
-            <p class="mt-2 text-gray-600 leading-relaxed">I understand your margins, your workflows, and your customers before I touch any technology.</p>
-          </div>
-          <div class="relative pl-8 slide-in-right group" style="animation-delay: 0.3s">
-            <div class="absolute left-0 top-0 w-4 h-4 bg-brand-600 rounded-full -translate-x-[9px] group-hover:scale-125 transition-transform duration-300"></div>
-            <p class="text-brand-600 font-bold text-xs tracking-widest uppercase">Community-Tested</p>
-            <h3 class="text-xl font-bold text-gray-900 mt-2">I lead Build to Own Club.</h3>
-            <p class="mt-2 text-gray-600 leading-relaxed">A community of founders replacing manual work with AI. Every edge case, every workaround, every win gets fed back into what I build for clients.</p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- Final CTA -->
-  <section class="py-20 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-white via-brand-50/10 to-white -z-10"></div>
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center slide-in-up">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Book a 20-minute call.</h2>
-      <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-        I'll identify the workflows costing you the most time and show you exactly what automation looks like for your business. If it's not a fit, I'll tell you.
+  <!-- 11. FINAL CTA -->
+  <section class="py-24 relative overflow-hidden bg-brand-600">
+    <div class="absolute inset-0 bg-gradient-to-br from-brand-600 via-brand-700 to-brand-800"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-500/20 rounded-full blur-3xl"></div>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center slide-in-up relative">
+      <p class="font-mono text-xs tracking-widest uppercase text-brand-200 mb-4">Get Started</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold text-white tracking-tight">Find your 16 hours.</h2>
+      <p class="mt-4 text-brand-100 text-lg leading-relaxed">
+        30 minutes. I'll map your workflows and show you exactly which hours you can get back. You leave with a clear action plan, whether we work together or not.
       </p>
-      <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-brand-600 to-brand-700 text-white font-semibold rounded-lg hover:shadow-xl hover:shadow-brand-200 transition-all duration-300 transform hover:-translate-y-0.5 text-xl">
-        Book a Free Consultation →
+      <a href="/contact" class="mt-8 inline-flex items-center gap-2 px-10 py-5 bg-white text-brand-700 font-bold rounded-lg hover:shadow-2xl hover:shadow-brand-900/30 transition-all duration-200 transform hover:-translate-y-0.5 text-xl">
+        Book Your Free Audit →
       </a>
-      <p class="mt-4 text-sm text-gray-400">No commitment. No pitch deck. Just the workflow.</p>
+      <p class="mt-4 text-sm text-brand-200/70 font-mono">No commitment. No pitch deck. Just the math.</p>
     </div>
   </section>
 
-  <!-- Divider -->
-  <div class="max-w-6xl mx-auto px-4 sm:px-6"><div class="h-px bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div></div>
-
-  <!-- Build to Own Club (bottom, soft) -->
+  <!-- 12. BUILD TO OWN CLUB -->
   <section class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="bg-gradient-to-br from-white to-brand-50/40 rounded-2xl p-8 border border-brand-100/60 flex flex-col md:flex-row items-center gap-6 slide-in-up">
+      <div class="bg-white rounded-xl p-8 border border-slate-100 shadow-layered flex flex-col md:flex-row items-center gap-6 slide-in-up">
         <div class="flex-1 text-center md:text-left">
-          <p class="text-brand-600 font-semibold text-xs tracking-widest uppercase mb-1">Community</p>
-          <h3 class="text-xl font-bold text-gray-900">Build to Own Club</h3>
-          <p class="mt-2 text-gray-600 text-sm leading-relaxed">
-            Want to build your own AI systems? Join a growing community of founders and operators building and owning their own automated workflows.
+          <p class="font-mono text-xs tracking-widest uppercase text-brand-600 mb-1">Community</p>
+          <h3 class="font-display text-xl font-bold text-slate-900">Want to build AI tools yourself?</h3>
+          <p class="mt-2 text-slate-500 text-sm leading-relaxed">
+            Join Build to Own Club. A community of solopreneurs, startups, and social projects learning to build and own their own AI tools.
           </p>
         </div>
-        <a href="https://buildtoown.club" class="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-white text-brand-600 font-semibold rounded-lg border border-brand-200 hover:border-brand-400 hover:shadow-sm transition-all duration-300 whitespace-nowrap">
-          Learn More →
+        <a href="https://buildtoown.club" class="shrink-0 inline-flex items-center gap-2 px-6 py-3 text-brand-600 font-semibold rounded-lg border border-brand-200 hover:border-brand-400 hover:bg-brand-50 transition-all duration-200 whitespace-nowrap">
+          Join the Community →
         </a>
       </div>
     </div>
@@ -377,6 +488,28 @@ import Layout from '../../layouts/Layout.astro';
   .slide-in-up.visible {
     opacity: 1;
     transform: translate(0);
+  }
+
+  /* Tabular numbers for stats */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Primary button hover */
+  .btn-primary {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .btn-primary:hover::after {
+    opacity: 1;
   }
 </style>
 

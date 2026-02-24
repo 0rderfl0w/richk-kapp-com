@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 440" role="img" aria-labelledby="hourglass-title" style="width: 100%; height: auto;">
+  <title id="hourglass-title">Time slipping away — the hours you lose don't come back</title>
+
+  <style>
+    .sand-stream {
+      animation: stream-pulse 2s ease-in-out infinite;
+    }
+    @keyframes stream-pulse {
+      0%, 100% { stroke-opacity: 0.75; }
+      50% { stroke-opacity: 0.4; }
+    }
+
+    .sand-top {
+      animation: deplete 10s ease-in-out infinite alternate;
+      transform-origin: 150px 120px;
+    }
+    @keyframes deplete {
+      0% { transform: scaleY(1); }
+      100% { transform: scaleY(0.7); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sand-stream, .sand-top {
+        animation: none !important;
+      }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="glass" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#e8edf5" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#dae1ed" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4263eb"/>
+      <stop offset="100%" stop-color="#3b5bdb"/>
+    </linearGradient>
+
+    <!-- Clip: upper glass interior -->
+    <clipPath id="upper-interior">
+      <path d="M88 70 C60 82 58 178 145 220 L155 220 C242 178 240 82 212 70 Z"/>
+    </clipPath>
+
+    <!-- Clip: lower glass interior -->
+    <clipPath id="lower-interior">
+      <path d="M145 220 C58 262 60 358 88 370 L212 370 C240 358 242 262 155 220 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- ============================ -->
+  <!-- GLASS BODY — continuous S-curves -->
+  <!-- ============================ -->
+
+  <!-- Left side: one continuous S-curve top to bottom -->
+  <!-- Upper left: from cap (88,70) bows out to ~x=58, sweeps into waist (145,220) -->
+  <!-- Lower left: from waist (145,220) bows out to ~x=58, sweeps to cap (88,370) -->
+  <path d="
+    M88 70
+    C60 82 58 178 145 220
+    C58 262 60 358 88 370
+  " fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Right side: mirror -->
+  <path d="
+    M212 70
+    C240 82 242 178 155 220
+    C242 262 240 358 212 370
+  " fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Glass fill — upper bulb -->
+  <path d="
+    M88 70
+    C60 82 58 178 145 220
+    L155 220
+    C242 178 240 82 212 70
+    Z
+  " fill="url(#glass)"/>
+
+  <!-- Glass fill — lower bulb -->
+  <path d="
+    M145 220
+    C58 262 60 358 88 370
+    L212 370
+    C240 358 242 262 155 220
+    Z
+  " fill="url(#glass)"/>
+
+  <!-- ============================ -->
+  <!-- GLASS REFLECTIONS            -->
+  <!-- ============================ -->
+
+  <!-- Upper left highlight -->
+  <path d="M95 78 C72 92 68 155 130 210" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+  <path d="M100 80 C78 94 74 148 125 204" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+
+  <!-- Lower left highlight -->
+  <path d="M130 230 C68 268 72 348 95 362" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
+
+  <!-- Upper right subtle inner reflection -->
+  <path d="M200 82 C218 90 222 130 195 182" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.12"/>
+
+  <!-- ============================ -->
+  <!-- CAPS                         -->
+  <!-- ============================ -->
+
+  <!-- Top cap -->
+  <rect x="72" y="57" width="156" height="16" rx="3.5" fill="url(#cap)"/>
+  <rect x="74" y="58" width="152" height="5" rx="2.5" fill="white" opacity="0.18"/>
+
+  <!-- Bottom cap -->
+  <rect x="72" y="367" width="156" height="16" rx="3.5" fill="url(#cap)"/>
+  <rect x="74" y="368" width="152" height="5" rx="2.5" fill="white" opacity="0.18"/>
+
+  <!-- ============================ -->
+  <!-- SAND — UPPER CHAMBER         -->
+  <!-- ============================ -->
+  <!-- Sand settles at the BOTTOM of the upper bulb (gravity!) -->
+  <!-- Empty space above, sand fills from neck upward to ~y=135 -->
+  <g class="sand-top" clip-path="url(#upper-interior)">
+    <path d="
+      M60 135
+      Q95 145 150 145
+      Q205 145 240 135
+      L240 225
+      L60 225
+      Z
+    " fill="url(#sand)" opacity="0.82"/>
+    <!-- Surface shimmer on top of sand -->
+    <ellipse cx="150" cy="139" rx="72" ry="4" fill="#6380f0" opacity="0.2"/>
+  </g>
+
+  <!-- ============================ -->
+  <!-- SAND STREAM THROUGH NECK     -->
+  <!-- ============================ -->
+  <line class="sand-stream" x1="150" y1="216" x2="150" y2="245" stroke="#4263eb" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ============================ -->
+  <!-- SAND PILE — LOWER CHAMBER    -->
+  <!-- ============================ -->
+  <!-- Small pile collecting at the bottom of the lower bulb -->
+  <g clip-path="url(#lower-interior)">
+    <path d="
+      M60 345
+      Q95 330 150 330
+      Q205 330 240 345
+      L240 380
+      L60 380
+      Z
+    " fill="url(#sand)" opacity="0.75"/>
+    <!-- Surface shimmer on pile -->
+    <ellipse cx="150" cy="336" rx="60" ry="3.5" fill="#6380f0" opacity="0.18"/>
+  </g>
+
+</svg>
