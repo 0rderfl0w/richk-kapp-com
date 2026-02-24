@@ -2,6 +2,39 @@
 
 > Personal/professional website for Richard Kappel — serial entrepreneur, advisory services, and agentic AI solutions for SMBs.
 
+## Vision & Focus
+
+### What This Is
+Richard Kappel's personal brand site and primary revenue generator. The /ai page is a Hormozi-style sales page that sells AI integration consulting to SMBs. The rest of the site (home, advisory, contact) builds credibility and funnels traffic toward /ai.
+
+### Who It's For
+**Anyone willing to invest in done-for-you AI consulting.** SMB owners, solopreneurs, ops managers, and decision-makers who know they're wasting time on manual processes and want someone to build the solution for them. They're buying Richard's time, expertise, and implementation.
+
+The /ai page targets SMBs specifically. The /advisory page serves a broader range including solopreneurs and individual professionals. Both are paying clients.
+
+Key verticals: retail, trades/contractors, professional services, e-commerce, coaching, freelancers.
+
+### What Success Looks Like
+- /ai page converts visitors into "Free Automation Audit" bookings
+- 3-5 qualified audit calls per week from organic + outreach traffic
+- First paying consulting clients ($5K-$25K engagements)
+- Richard positioned as "the guy who actually builds AI for real businesses"
+
+### Current Priority
+Finishing the /ai landing page redesign (Hormozi-style sales page with animated SVG hero, editorial design, full offer stack). Once the page is polished, shift to driving traffic: cold outreach, LinkedIn content, and potentially paid ads.
+
+### What This Is NOT
+- **Not a community.** That's Build to Own Club.
+- **Not a DIY learning platform.** People who want to build it themselves go to Build to Own Club.
+- **Not a SaaS product.** This is high-touch consulting. Richard builds custom AI systems for each client.
+- **Not a portfolio site.** It's a sales machine. Every section exists to move someone toward booking a call.
+
+### Boundary with Build to Own Club
+richkapp.com = "I build it FOR you" (anyone with budget who wants done-for-you consulting)
+Build to Own Club = "You build it yourself" (people who want to learn and build their own tools)
+
+The split isn't company size. It's willingness to pay for implementation vs. wanting to learn DIY. A solopreneur who wants Richard to build their system is a richkapp.com client. A solopreneur who wants to learn AI and build it themselves goes to Build to Own Club.
+
 ## Stack
 
 | Layer | Choice | Notes |

@@ -4,6 +4,10 @@
 
 ## 2026-02-24
 
+- Added Vision & Focus section to PROJECT.md: strategic direction, target audience (US SMBs 5-200 employees), success metrics, current priority, boundary with Build to Own Club (Alex)
+- Added Richard's founder photo to /ai credibility section from Build to Own Club's founder.jpg (Alex)
+- Hero SVG v4: two-ring orbit animation with 9 icons (5 inner, 4 outer counter-rotating), redesigned dinner and family icons (Alex)
+
 ### Content Updates (Alex + Crash & Burn)
 - /ai page: Absorbed B2O cost data into stat cards — $8,700/yr SaaS waste, 49% unused licenses ("200 features to use 3"), 16 hrs/week admin time, 67% first-responder competitive stat
 - /ai page: New Before/After diff card — SaaS $852→$15/mo, quotes 45→5 min, response hours→instant, admin 16→2 hrs, tools controlled 0→all
