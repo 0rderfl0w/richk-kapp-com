@@ -2,6 +2,10 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+
+## 2026-02-24 — Deploy
+- APPROVED + deployed to deploy branch: hero label "Advisory + AI Solutions", tightened hero copy to 1 paragraph, B2O section context-aware copy ("Want to learn AI and build your own tools instead?") (Anorak)
+
 ## 2026-02-24
 
 - Added Vision & Focus section to PROJECT.md: strategic direction, target audience (US SMBs 5-200 employees), success metrics, current priority, boundary with Build to Own Club (Alex)
