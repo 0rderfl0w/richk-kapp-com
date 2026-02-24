@@ -2,27 +2,59 @@
   <title id="hourglass-title">Time slipping away — the hours you lose don't come back</title>
 
   <style>
-    .sand-stream {
-      animation: stream-pulse 2s ease-in-out infinite;
-    }
-    @keyframes stream-pulse {
-      0%, 100% { stroke-opacity: 0.75; }
-      50% { stroke-opacity: 0.4; }
-    }
-
+    /* UPPER SAND — level drops linearly (constant flow rate) */
     .sand-top {
-      animation: deplete 10s ease-in-out infinite alternate;
-      transform-origin: 150px 120px;
+      animation: deplete 8s linear infinite;
     }
     @keyframes deplete {
-      0% { transform: scaleY(1); }
-      100% { transform: scaleY(0.7); }
+      0%, 2%   { transform: translateY(65px); }
+      80%      { transform: translateY(145px); }
+      88%, 95% { transform: translateY(145px); }
+      100%     { transform: translateY(65px); }
+    }
+
+    /* LOWER MOUND — grows from half to full */
+    .sand-pile {
+      animation: pile-grow 8s linear infinite;
+      transform-origin: 150px 380px;
+    }
+    @keyframes pile-grow {
+      0%, 2%   { transform: scaleY(0.45); }
+      80%      { transform: scaleY(1); }
+      88%, 95% { transform: scaleY(1); }
+      100%     { transform: scaleY(0.45); }
+    }
+
+    /* GRAIN STREAM — stroke-dasharray dots falling through neck */
+    .grain-stream {
+      stroke-dasharray: 1 11;
+      animation: grains-fall 0.6s linear infinite, stream-vis 8s linear infinite;
+    }
+    @keyframes grains-fall {
+      0%   { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -12; }
+    }
+    @keyframes stream-vis {
+      0%, 3%   { opacity: 0; }
+      6%, 78%  { opacity: 0.65; }
+      82%, 100% { opacity: 0; }
+    }
+
+    /* Second stream offset for texture */
+    .grain-stream-2 {
+      stroke-dasharray: 0.5 14;
+      animation: grains-fall-2 0.75s linear infinite, stream-vis 8s linear infinite;
+    }
+    @keyframes grains-fall-2 {
+      0%   { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -14.5; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .sand-stream, .sand-top {
+      .sand-top, .sand-pile, .grain-stream, .grain-stream-2 {
         animation: none !important;
       }
+      .grain-stream, .grain-stream-2 { opacity: 0 !important; }
     }
   </style>
 
@@ -43,119 +75,79 @@
       <stop offset="100%" stop-color="#3b5bdb"/>
     </linearGradient>
 
-    <!-- Clip: upper glass interior -->
-    <clipPath id="upper-interior">
+    <linearGradient id="sand-dark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3b5bdb"/>
+      <stop offset="100%" stop-color="#364fc7"/>
+    </linearGradient>
+
+    <clipPath id="upper-clip">
       <path d="M88 70 C60 82 58 178 145 220 L155 220 C242 178 240 82 212 70 Z"/>
     </clipPath>
 
-    <!-- Clip: lower glass interior -->
-    <clipPath id="lower-interior">
+    <clipPath id="lower-clip">
       <path d="M145 220 C58 262 60 358 88 370 L212 370 C240 358 242 262 155 220 Z"/>
     </clipPath>
   </defs>
 
-  <!-- ============================ -->
-  <!-- GLASS BODY — continuous S-curves -->
-  <!-- ============================ -->
+  <!-- GLASS BODY -->
+  <path d="M88 70 C60 82 58 178 145 220 C58 262 60 358 88 370"
+        fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M212 70 C240 82 242 178 155 220 C242 262 240 358 212 370"
+        fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M88 70 C60 82 58 178 145 220 L155 220 C242 178 240 82 212 70 Z" fill="url(#glass)"/>
+  <path d="M145 220 C58 262 60 358 88 370 L212 370 C240 358 242 262 155 220 Z" fill="url(#glass)"/>
 
-  <!-- Left side: one continuous S-curve top to bottom -->
-  <!-- Upper left: from cap (88,70) bows out to ~x=58, sweeps into waist (145,220) -->
-  <!-- Lower left: from waist (145,220) bows out to ~x=58, sweeps to cap (88,370) -->
-  <path d="
-    M88 70
-    C60 82 58 178 145 220
-    C58 262 60 358 88 370
-  " fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- Right side: mirror -->
-  <path d="
-    M212 70
-    C240 82 242 178 155 220
-    C242 262 240 358 212 370
-  " fill="none" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round"/>
-
-  <!-- Glass fill — upper bulb -->
-  <path d="
-    M88 70
-    C60 82 58 178 145 220
-    L155 220
-    C242 178 240 82 212 70
-    Z
-  " fill="url(#glass)"/>
-
-  <!-- Glass fill — lower bulb -->
-  <path d="
-    M145 220
-    C58 262 60 358 88 370
-    L212 370
-    C240 358 242 262 155 220
-    Z
-  " fill="url(#glass)"/>
-
-  <!-- ============================ -->
-  <!-- GLASS REFLECTIONS            -->
-  <!-- ============================ -->
-
-  <!-- Upper left highlight -->
+  <!-- REFLECTIONS -->
   <path d="M95 78 C72 92 68 155 130 210" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
   <path d="M100 80 C78 94 74 148 125 204" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
-
-  <!-- Lower left highlight -->
   <path d="M130 230 C68 268 72 348 95 362" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.25"/>
 
-  <!-- Upper right subtle inner reflection -->
-  <path d="M200 82 C218 90 222 130 195 182" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.12"/>
-
-  <!-- ============================ -->
-  <!-- CAPS                         -->
-  <!-- ============================ -->
-
-  <!-- Top cap -->
+  <!-- CAPS -->
   <rect x="72" y="57" width="156" height="16" rx="3.5" fill="url(#cap)"/>
   <rect x="74" y="58" width="152" height="5" rx="2.5" fill="white" opacity="0.18"/>
-
-  <!-- Bottom cap -->
   <rect x="72" y="367" width="156" height="16" rx="3.5" fill="url(#cap)"/>
   <rect x="74" y="368" width="152" height="5" rx="2.5" fill="white" opacity="0.18"/>
 
-  <!-- ============================ -->
-  <!-- SAND — UPPER CHAMBER         -->
-  <!-- ============================ -->
-  <!-- Sand settles at the BOTTOM of the upper bulb (gravity!) -->
-  <!-- Empty space above, sand fills from neck upward to ~y=135 -->
-  <g class="sand-top" clip-path="url(#upper-interior)">
-    <path d="
-      M60 135
-      Q95 145 150 145
-      Q205 145 240 135
-      L240 225
-      L60 225
-      Z
-    " fill="url(#sand)" opacity="0.82"/>
-    <!-- Surface shimmer on top of sand -->
-    <ellipse cx="150" cy="139" rx="72" ry="4" fill="#6380f0" opacity="0.2"/>
+  <!-- UPPER SAND — starts at ~half full -->
+  <g clip-path="url(#upper-clip)">
+    <g class="sand-top">
+      <rect x="45" y="30" width="210" height="200" fill="url(#sand)" opacity="0.8"/>
+    </g>
   </g>
 
-  <!-- ============================ -->
-  <!-- SAND STREAM THROUGH NECK     -->
-  <!-- ============================ -->
-  <line class="sand-stream" x1="150" y1="216" x2="150" y2="245" stroke="#4263eb" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- GRAIN STREAM — dots falling from neck down into lower chamber -->
+  <!-- Two offset lines with dasharray = individual moving grain dots -->
+  <g clip-path="url(#lower-clip)">
+    <line class="grain-stream"
+          x1="150" y1="220" x2="150" y2="320"
+          stroke="#4263eb" stroke-width="1.5" stroke-linecap="round"/>
+    <line class="grain-stream-2"
+          x1="149" y1="220" x2="149" y2="320"
+          stroke="#3b5bdb" stroke-width="1" stroke-linecap="round"/>
+  </g>
 
-  <!-- ============================ -->
-  <!-- SAND PILE — LOWER CHAMBER    -->
-  <!-- ============================ -->
-  <!-- Small pile collecting at the bottom of the lower bulb -->
-  <g clip-path="url(#lower-interior)">
-    <path d="
-      M60 345
-      Q95 330 150 330
-      Q205 330 240 345
-      L240 380
-      L60 380
-      Z
-    " fill="url(#sand)" opacity="0.75"/>
-    <!-- Surface shimmer on pile -->
-    <ellipse cx="150" cy="336" rx="60" ry="3.5" fill="#6380f0" opacity="0.18"/>
+  <!-- LOWER SAND PILE — cone mound, starts half-size, grows to full -->
+  <g clip-path="url(#lower-clip)">
+    <g class="sand-pile">
+      <path d="
+        M50 380
+        L50 348
+        Q85 340 115 330
+        Q135 318 150 304
+        Q165 318 185 330
+        Q215 340 250 348
+        L250 380
+        Z
+      " fill="url(#sand)" opacity="0.78"/>
+      <path d="
+        M50 380
+        L50 362
+        Q100 355 150 348
+        Q200 355 250 362
+        L250 380
+        Z
+      " fill="url(#sand-dark)" opacity="0.4"/>
+    </g>
   </g>
 
 </svg>
