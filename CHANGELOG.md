@@ -3,7 +3,19 @@
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
 ## 2026-02-24
-- Contact page redesign: "Quiet Technical Confidence" design system applied. Replaced gray palette with slate, font-mono section labels (PROCESS, LOCATION), editorial numbered steps (01/02/03) replacing icon badges, layered shadow hover on LinkedIn card, gradient bloom hero matching other pages, emerald success states, compact button sizing. All content and Web3Forms integration preserved. (Crash & Burn)
+
+### Content Updates (Alex + Crash & Burn)
+- /ai page: Absorbed B2O cost data into stat cards — $8,700/yr SaaS waste, 49% unused licenses ("200 features to use 3"), 16 hrs/week admin time, 67% first-responder competitive stat
+- /ai page: New Before/After diff card — SaaS $852→$15/mo, quotes 45→5 min, response hours→instant, admin 16→2 hrs, tools controlled 0→all
+- /ai page: Cost waste paragraph woven into The Shift section
+- /ai page: B2O Problem stats updated — $10,000+, 88% budget barrier (Chronicle of Philanthropy), 62% no time to vet tools (Chronicle of Philanthropy)
+- /ai page: Fixed Build to Own Club card link (was /contact, now buildtoown.club)
+
+### Design — "Quiet Technical Confidence" System (Crash & Burn)
+- Contact page: Full redesign — slate palette, mono section labels (PROCESS, LOCATION), editorial numbered steps (01/02/03), layered shadow hover on LinkedIn card, gradient bloom hero, emerald success states
+- Hero SVG: New animated orbit illustration (`hero-animation.svg`) — fixed family icon (now house+heart), fixed meditation icon (now coffee cup), expanded viewBox to prevent icon clipping
+- Hourglass SVG: New animated illustration (`hourglass-time.svg`) for competitive pressure section — sand depleting from upper chamber, stream through neck, pile collecting at bottom
+- /ai page: Replaced dashed image placeholder with hourglass SVG
 
 ## 2025-07-27
 - Full visual redesign of advisory page: font-display headings, mono section labels (01–05 Service), mono pill focus area tags replacing inline text, layered shadow approach cards, removed gradient icon boxes and divider lines, alternating white/slate-50 sections, branded bottom CTA section. (Crash & Burn)
@@ -12,7 +24,7 @@
 
 ## 2025-07-18
 - Full rewrite of /ai page with Hormozi-style sales flow (Alex). New structure: Dream outcome hero → Competitive fear → Empowerment anchor → Pain math → Offer stack → Before/after → How it works → Credibility → Qualification → Guarantee → CTA → B2O community card. All copy reframed around empowerment (never replacement). Image placeholders included for Z to fill.
-## 2026-02-24
+## 2026-02-24 (earlier)
 - Rewrote /ai landing page copy with Dream Outcome + Fear lens: 12 sections with updated emotional arc (Hero dream framing, Pain Math treasure map, new Fear/Competitor section, dream-outcome card titles, updated "for you" list). No dark backgrounds, no em dashes, no exclamation points. IntersectionObserver animations and all design patterns preserved. Build verified clean. (Claude-Code/Subagent)
 - Rewrote /ai landing page as Hormozi-style sales page per spec: 11 sections (Hero, Pain Math, Reframe, Offer Stack, Before/After, How It Works, Proof/Credibility, Who This Is Not For, Guarantee, Final CTA, Build to Own Club). White theme, brand colors, IntersectionObserver animations preserved. Build verified clean. (Alex/Subagent)
 
