@@ -46,14 +46,16 @@ The split isn't company size. It's willingness to pay for implementation vs. wan
 | SEO | `@astrojs/sitemap` | Auto-generated sitemap |
 | Hosting | Hostinger (static) | A record → 145.223.77.153 |
 | Domain | richkapp.com | DNS at registrar |
-| Repo | `0rderfl0w/richk-kapp-com` (GitHub) | |
+| Repo | `0rderfl0w/richk-kapp-com` (GitHub, **public**) | |
 
 ## Hosting & Deploy
 
 - **Host:** Hostinger static hosting
+- **Repo visibility:** Public (audited 2025-07-25 — no secrets exposed)
+- **Hostinger Git auth:** Classic PAT (`hostinger`) in HTTPS URL — `https://0rderfl0w:<PAT>@github.com/0rderfl0w/richk-kapp-com.git`
 - **Deploy process:** Build on `main`, copy `dist/` to orphan `deploy` branch, push, then Z hits "Deploy" in Hostinger panel
 - **Branches:** `main` (development), `deploy` (orphan, built output only)
-- **Env vars:** None currently (Web3Forms key is hardcoded in contact page)
+- **Env vars:** None currently (Web3Forms key is hardcoded in contact page — public by design)
 - ⚠️ **Agents do NOT deploy directly. Hand off to KITT for review + deploy.**
 
 ## Architecture

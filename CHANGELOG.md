@@ -3,6 +3,11 @@
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
 
+## 2025-07-25
+- Hostinger deploy switched from plain HTTPS to classic PAT-authenticated URL (Zeno)
+- Repo audited for exposed secrets — clean, safe to keep public (Zeno)
+- PROJECT.md updated with deploy auth details and repo visibility (Zeno)
+
 ## 2026-02-24 — Deploy
 - APPROVED + deployed to deploy branch: hero label "Advisory + AI Solutions", tightened hero copy to 1 paragraph, B2O section context-aware copy ("Want to learn AI and build your own tools instead?") (Anorak)
 
