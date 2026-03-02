@@ -1,26 +1,45 @@
 # richkapp.com
 
-Personal and professional website for Richard Kappel — AI advisory, tech consulting, and community building.
+Personal and professional website for **Richard Kappel** — serial entrepreneur, advisor, and agentic AI consultant for small and medium businesses.
 
 **Live:** [richkapp.com](https://richkapp.com)
 
-## Stack
+---
 
-- Astro 5 + React 19 + Tailwind CSS 3
-- Bun runtime
-- Hostinger static hosting
+## About
 
-## Pages
+Four-page marketing site built to convert visitors into consulting clients. The `/ai` page is a Hormozi-style sales page for AI integration consulting. The rest builds credibility and funnels traffic.
 
-- **Home** — Landing page with services, credentials, community
-- **Advisory** — AI advisory services for SMBs
-- **AI** — AI for contractors and small businesses
-- **Contact** — Web3Forms-powered contact form
+### Pages
 
-## Sub-Projects
+- **Home** (`/`) — Hero, stats, services overview, testimonials, founder story, values, CTA
+- **Advisory** (`/advisory`) — Advisory service offerings and process
+- **AI for SMBs** (`/ai`) — Done-for-you AI consulting sales page
+- **Contact** (`/contact`) — Contact form (Web3Forms)
 
-- `foreclosure-bot/` — Python foreclosure data scraper
+---
+
+## Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Framework | [Astro 5](https://astro.build) (static site generation) |
+| Styling | [Tailwind CSS 3](https://tailwindcss.com) |
+| Runtime | [Bun](https://bun.sh) |
+| Hosting | Hostinger (static) |
+
+---
+
+## Getting Started
+
+```bash
+bun install
+bun run dev     # http://localhost:4321
+bun run build   # production build → dist/
+```
+
+---
 
 ## License
 
-Private repository.
+Private. All rights reserved.
