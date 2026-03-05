@@ -145,11 +145,29 @@ After push, Z hits "Deploy" in Hostinger panel.
 
 ## Business Context
 
-- **Goal:** /ai page converts visitors into "Free Automation Audit" bookings → $5K-$25K consulting engagements
+- **Goal:** /ai page converts visitors into "Free Automation Audit" bookings → consulting engagements
 - **Key verticals:** retail, trades/contractors, professional services, e-commerce, coaching, freelancers
 - **NOT a community** (that's Build to Own Club), NOT DIY learning, NOT SaaS
 - **richkapp.com** = "I build it FOR you" (done-for-you consulting)
 - **Build to Own Club** = "You build it yourself" (DIY learning)
+
+### Two Services
+
+**Service 1: SaaS Replacement ("Own Your Tools")**
+- Custom Build: audit their stack, build stripped-down version they own outright
+- White Labeled: their brand on the tools, their margins
+- Full Migration: extract data from hostile platforms, zero downtime
+
+**Service 2: AI Agents ("Your AI Team")**
+- Health & Performance Agent: personal accountability, user picks goals + personality (Goggins, Robbins, Gary Vee), brainstorming partner
+- Customer Support Agent: website-facing, answers FAQs, qualifies leads, routes prospects, 24/7
+- Operations & Sales Agent: internal second brain (SOPs, onboarding, knowledge) + pipeline tracking and follow-ups
+
+### Key Principles
+- No unsourced stats on the page. Every number must be verifiable.
+- Conservative with claims. Audience is service-based SMBs, not tech startups.
+- Before/After table is specific to Service 1 (ownership/cost), not AI agents.
+- Cledara 2025 Software Spend Report is the sourced benchmark ($8K/employee/yr for tech, halved for service-based).
 
 ---
 
@@ -163,3 +181,9 @@ After push, Z hits "Deploy" in Hostinger panel.
 | 2026-02-08 | AI for SMBs is a service under richkapp.com, not a separate project |
 | 2026-02-08 | White-only theme — dark sections explicitly rejected |
 | 2026-02-08 | Web3Forms key wired up in contact.astro |
+| 2026-03-05 | Removed all unsourced stats from /ai page. Every number must be verifiable. |
+| 2026-03-05 | Consolidated 3 separate services into 1 service with 3 features (Custom Build, White Labeled, Full Migration) |
+| 2026-03-05 | Merged Operations Agent + Sales Follow-Up Agent into single Operations & Sales Agent |
+| 2026-03-05 | Removed price badges from AI agent cards. Removed fake cost comparison pills from service cards. |
+| 2026-03-05 | Before/After table now specific to Service 1 only (ownership/cost). Moved under Own Your Tools section. |
+| 2026-03-05 | Health agent updated: user picks goals + personality (Goggins, Robbins, Gary Vee), doubles as brainstorming partner |

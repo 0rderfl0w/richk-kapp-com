@@ -2,6 +2,17 @@
 
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
+## 2026-03-05
+- Removed all unsourced/fabricated stats from /ai page. Replaced with conservative Cledara-sourced benchmark ($1,600/mo for service-based SMBs) (Alex)
+- Consolidated 3 services (SaaS Replacement, White-Label, Migration) into 1 service with 3 features under "Own Your Tools" (Alex)
+- Merged Operations Agent + Sales Follow-Up Agent into single "Operations & Sales Agent" (Alex)
+- Removed all price badges from AI agent cards (Alex)
+- Restructured Before/After table to be Service 1 specific (ownership/cost only), moved under Own Your Tools section (Alex)
+- Updated Health & Performance Agent: user picks goals (meditation, walking, exercise, diet) + personality (Goggins, Robbins, Gary Vee), added brainstorming partner angle (Alex)
+- Updated "Not for you" section: removed chatbot line (contradicted Customer Support Agent), added learning curve and data ownership filters (Alex)
+- Updated guarantee to cover all value props (time, cost, control) not just time savings (Alex)
+- Updated AGENTS.md with two-service model and key principles (Alex)
+
 
 ## 2025-07-25
 - Hostinger deploy switched from plain HTTPS to classic PAT-authenticated URL (Zeno)
