@@ -1,6 +1,6 @@
 # AGENTS.md — richkapp.com
 
-Personal/professional website for Richard Kappel — serial entrepreneur, advisory services, and agentic AI solutions for SMBs. A sales machine: every section funnels visitors toward booking a free automation audit.
+Personal/professional website for Richard Kappel — custom software consulting for SMBs. Single offer: replace the SaaS tools you rent with software you own. Every section funnels visitors toward booking a free software audit.
 
 **Live:** https://richkapp.com
 **Repo:** `0rderfl0w/richk-kapp-com` (GitHub, public)
@@ -42,7 +42,7 @@ src/
 │   ├── index.astro              # Landing (hero, stats, services, testimonials, founder, values, how-i-work, CTA)
 │   ├── advisory.astro           # Advisory services (5 services, timeline process)
 │   ├── ai/
-│   │   ├── index.astro          # AI for SMBs (Hormozi-style sales page, editorial design)
+│   │   ├── index.astro          # SaaS replacement sales page (single offer, Hormozi-style)
 │   │   └── contractors.astro    # AI for contractors (vertical-specific)
 │   └── contact.astro            # Contact form (Web3Forms — key hardcoded, public by design)
 └── layouts/
@@ -145,29 +145,30 @@ After push, Z hits "Deploy" in Hostinger panel.
 
 ## Business Context
 
-- **Goal:** /ai page converts visitors into "Free Automation Audit" bookings → consulting engagements
+- **Goal:** /ai page converts visitors into "Free Software Audit" bookings → custom build engagements ($3K+ per project, 50% deposit upfront)
 - **Key verticals:** retail, trades/contractors, professional services, e-commerce, coaching, freelancers
 - **NOT a community** (that's Build to Own Club), NOT DIY learning, NOT SaaS
 - **richkapp.com** = "I build it FOR you" (done-for-you consulting)
 - **Build to Own Club** = "You build it yourself" (DIY learning)
 
-### Two Services
+### Single Offer: SaaS Replacement ("Own Your Tools")
 
-**Service 1: SaaS Replacement ("Own Your Tools")**
-- Custom Build: audit their stack, build stripped-down version they own outright
-- White Labeled: their brand on the tools, their margins
-- Full Migration: extract data from hostile platforms, zero downtime
+One focused service with three features:
+- **Custom Build:** audit their stack, build stripped-down version they own outright
+- **White Labeled:** their brand on customer-facing tools, their margins
+- **Full Migration:** extract data from hostile platforms, zero downtime
 
-**Service 2: AI Agents ("Your AI Team")**
-- Health & Performance Agent: personal accountability, user picks goals + personality (Goggins, Robbins, Gary Vee), brainstorming partner
-- Customer Support Agent: website-facing, answers FAQs, qualifies leads, routes prospects, 24/7
-- Operations & Sales Agent: internal second brain (SOPs, onboarding, knowledge) + pipeline tracking and follow-ups
+**Pricing model:** Project-based ($3K+), 50% deposit upfront, 50% on delivery. Stripe payment links (one-off, not recurring).
+
+**Client range:** Teams of 2 to 65. Retail, services, trades, professional firms.
+
+**AI Agents service:** Removed from /ai page to keep single-offer focus. May return as separate page (/ai/agents) later.
 
 ### Key Principles
 - No unsourced stats on the page. Every number must be verifiable.
 - Conservative with claims. Audience is service-based SMBs, not tech startups.
-- Before/After table is specific to Service 1 (ownership/cost), not AI agents.
-- Cledara 2025 Software Spend Report is the sourced benchmark ($8K/employee/yr for tech, halved for service-based).
+- Sourced stats: Cledara 2025 ($8K/employee/yr tech, halved for service-based), Pendo 2019/2024 (80% features unused).
+- Before/After table is specific to ownership/cost.
 
 ---
 

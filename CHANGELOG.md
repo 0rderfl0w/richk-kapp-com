@@ -3,6 +3,14 @@
 > Newest at top. Never delete entries. Agents prepend here after significant work.
 
 ## 2026-03-05
+- Pivoted /ai page to single offer: SaaS replacement only. Removed AI agents section and philosophy block. (Alex)
+- New hero: "Stop paying for software you don't own." Centered, no SVG, grayscale logo row (Alex)
+- New AI shift urgency block with blue background: "AI changed the game" (Alex)
+- Rewrote stat cards: $1,600/mo (Cledara sourced), 80% unused (Pendo sourced), 0% your brand (Alex)
+- Rewrote How It Works for SaaS replacement flow: Software Audit → Build Replacement → Test → Cancel Subscriptions (Alex)
+- Updated final CTA: "See what you're overpaying for" (Alex)
+- Removed competitive pressure section (Alex)
+- LinkedIn bio rewrite provided matching new single-offer positioning (Alex)
 - Removed all unsourced/fabricated stats from /ai page. Replaced with conservative Cledara-sourced benchmark ($1,600/mo for service-based SMBs) (Alex)
 - Consolidated 3 services (SaaS Replacement, White-Label, Migration) into 1 service with 3 features under "Own Your Tools" (Alex)
 - Merged Operations Agent + Sales Follow-Up Agent into single "Operations & Sales Agent" (Alex)
