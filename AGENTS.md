@@ -1,6 +1,6 @@
 # AGENTS.md — richkapp.com
 
-Personal/professional website for Richard Kappel — custom software consulting for SMBs. Single offer: replace the SaaS tools you rent with software you own. Every section funnels visitors toward booking a free software audit.
+Personal/professional website for Richard Kappel — custom software development for SMBs. Single offer: replace the SaaS tools you rent with software you own. Every section funnels visitors toward booking a free software audit.
 
 **Live:** https://richkapp.com
 **Repo:** `0rderfl0w/richk-kapp-com` (GitHub, public)
