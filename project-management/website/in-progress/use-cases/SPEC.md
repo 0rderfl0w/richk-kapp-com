@@ -269,3 +269,34 @@ Inner screenshot gallery: 2-3 images per use case with thumbnail navigation or a
 - Copy is tight: short, specific, no fluff
 - Every "Replaces" pricing is verifiable
 - Z approves before deploy
+
+---
+
+## Progress (as of 2026-03-06 20:46)
+
+### Done
+- [x] Carousel component built and integrated into /ai page (vanilla JS, arrows + dots, mobile swipe)
+- [x] Card layout: 50/50 split desktop, stacked mobile, aspect-video image area
+- [x] Copy written for all 5 cards (headlines, replaces, descriptions, callout pills)
+- [x] Screenshots taken and cropped (16:9) for 3 projects:
+  - Janus/OnIt: dashboard, schedule, quotes (3 images, rotating)
+  - Mission Control: kanban, CRM, dashboard (3 images, rotating)
+  - CAPA PVL: homepage, dog listings (2 images, rotating)
+- [x] Images saved to `public/images/showcase/`
+- [x] Auto-rotate JS working (3s interval per card)
+
+### Blocked
+- **Mission Control screenshots are dark mode** — CRT/hacker theme looks bad in a public showcase. Needs light mode built first. This is a separate task (touches entire CSS system, 1-2 hours minimum).
+- **Booking Tool (Open Booking Tool)** — React SPA, headless browser can't render it. Needs real browser session with JS execution to screenshot. Still has placeholder.
+- **Learning Platform (AcceptCrypto)** — React SPA, same issue. Needs test account + real browser. Still has placeholder.
+
+### Next Steps
+1. Build Mission Control light mode (separate task) OR remove from carousel until ready
+2. Screenshot Booking Tool and AcceptCrypto with a real browser (not headless)
+3. Replace remaining 2 placeholders with real images
+4. Z to review all screenshots before going live
+5. Commit and deploy
+
+### Open Questions
+- Remove Mission Control from carousel until light mode exists? Or keep dark screenshots?
+- Which Booking Tool views look best? (Z to review when screenshots are taken)

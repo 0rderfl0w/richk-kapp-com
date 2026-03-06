@@ -286,19 +286,166 @@ import Layout from '../../layouts/Layout.astro';
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="slide-in-left space-y-5 text-slate-600 text-lg leading-relaxed">
           <p>My only employee is AI. That means my costs are low and yours are too.</p>
-          <p>20 years building companies across 11 countries. Advising founders, startups, and SMBs on what actually moves the needle. I know what a business needs before I write a single line of code. That makes me fast.</p>
-          <p>I shipped a full SaaS platform in weeks. No development team. No contractors. Just AI and a refined intuition for how businesses actually run.</p>
+          <p>20 years building companies across 11 countries. Advising founders, startups, and SMBs on what actually moves the needle. I know what a business needs before a single line of code gets written. 20 years of experience has sharpened my intuition and makes me very efficient.</p>
+          
           <p>I run Build to Own Club, a community of founders building their own tools. Every edge case, every workaround, every win gets fed back into every system I build for you.</p>
-          <div class="pt-4 border-t border-slate-200 flex flex-wrap gap-2">
-            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">20 Years in Business</span>
-            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">11 Countries</span>
-            <span class="font-mono text-xs text-slate-500 bg-white border border-slate-200 px-3 py-1 rounded-full">100+ Builders Community</span>
-          </div>
+          <p>I love building, and I love helping SMBs. They are the heart of capitalism.</p>
+
         </div>
         <div class="slide-in-right">
           <div class="bg-white rounded-2xl overflow-hidden min-h-[300px]">
             <img src="/richard-kappel.jpg" alt="Richard Kappel" class="w-full h-full object-cover rounded-2xl" />
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I'VE BUILT CAROUSEL -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="font-display text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-12">What I've Built</h2>
+      
+      <!-- Carousel Container -->
+      <div class="relative">
+        <!-- Carousel Track -->
+        <div id="carousel-track" class="overflow-hidden">
+          <div id="carousel-inner" class="flex transition-transform duration-500 ease-out">
+            <!-- Card 1: Booking Platform -->
+            <div class="w-full flex-shrink-0 px-2">
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                  <!-- Image Placeholder -->
+                  <div class="aspect-video bg-slate-100 flex items-center justify-center rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+                    <span class="font-mono text-slate-400 text-sm">Booking Platform</span>
+                  </div>
+                  <!-- Content -->
+                  <div class="p-6 md:p-8">
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-slate-900">Booking Platform</h3>
+                    <p class="font-mono text-sm text-slate-500 mt-1">Replaces: Calendly, Acuity ($8-49/mo per user)</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Full booking system with your branding. Generate a code snippet, paste it into your website. Customers book directly. No Calendly logo. No per-seat fees.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Embeddable widget</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Calendar sync</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Your brand</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Field Service Management -->
+            <div class="w-full flex-shrink-0 px-2">
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                  <div class="aspect-video rounded-t-xl md:rounded-l-xl md:rounded-tr-none overflow-hidden relative" data-img-carousel>
+                      <img src="/images/showcase/janus-1.png" alt="Field service dashboard" class="w-full h-full object-cover object-top active" loading="lazy" />
+                      <img src="/images/showcase/janus-2.png" alt="Job scheduling calendar" class="w-full h-full object-cover object-top" loading="lazy" />
+                      <img src="/images/showcase/janus-3.png" alt="Quote builder" class="w-full h-full object-cover object-top" loading="lazy" />
+                  </div>
+                  <div class="p-6 md:p-8">
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-slate-900">Field Service Management</h3>
+                    <p class="font-mono text-sm text-slate-500 mt-1">Replaces: Jobber, ServiceTitan ($49-249/mo)</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Job scheduling, dispatch, quoting, invoicing, client management. Built for how your crew actually works, not how Jobber thinks you should.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Scheduling</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Quoting</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Invoicing</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Client CRM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Project Management -->
+            <div class="w-full flex-shrink-0 px-2">
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                  <div class="aspect-video rounded-t-xl md:rounded-l-xl md:rounded-tr-none overflow-hidden relative" data-img-carousel>
+                      <img src="/images/showcase/mc-1.png" alt="Kanban project board" class="w-full h-full object-cover object-top active" loading="lazy" />
+                      <img src="/images/showcase/mc-2.png" alt="CRM pipeline" class="w-full h-full object-cover object-top" loading="lazy" />
+                      <img src="/images/showcase/mc-3.png" alt="Dashboard overview" class="w-full h-full object-cover object-top" loading="lazy" />
+                  </div>
+                  <div class="p-6 md:p-8">
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-slate-900">Project Management</h3>
+                    <p class="font-mono text-sm text-slate-500 mt-1">Replaces: Monday.com, Asana ($8-16/seat/mo)</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Kanban boards, task tracking, team visibility. Everything Monday.com charges per seat for. Without the per-seat pricing.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Kanban boards</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Drag and drop</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Unlimited users</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Website with Admin Panel -->
+            <div class="w-full flex-shrink-0 px-2">
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                  <div class="aspect-video rounded-t-xl md:rounded-l-xl md:rounded-tr-none overflow-hidden relative" data-img-carousel>
+                      <img src="/images/showcase/website-1.png" alt="Website homepage" class="w-full h-full object-cover object-top active" loading="lazy" />
+                      <img src="/images/showcase/website-2.png" alt="Dog listings with filters" class="w-full h-full object-cover object-top" loading="lazy" />
+                  </div>
+                  <div class="p-6 md:p-8">
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-slate-900">Website with Admin Panel</h3>
+                    <p class="font-mono text-sm text-slate-500 mt-1">Replaces: Squarespace, Wix ($16-49/mo)</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">A complete website with an admin panel to manage content and data. No page builder lock-in. No plugin fees. You control everything.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Admin panel</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Database-driven</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Full code ownership</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Learning Platform -->
+            <div class="w-full flex-shrink-0 px-2">
+              <div class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+                <div class="grid md:grid-cols-2">
+                  <div class="aspect-video bg-slate-100 flex items-center justify-center rounded-t-xl md:rounded-l-xl md:rounded-tr-none">
+                    <span class="font-mono text-slate-400 text-sm">Learning Platform</span>
+                  </div>
+                  <div class="p-6 md:p-8">
+                    <h3 class="font-display text-xl md:text-2xl font-bold text-slate-900">Learning Platform</h3>
+                    <p class="font-mono text-sm text-slate-500 mt-1">Replaces: Teachable, Kajabi ($39-399/mo)</p>
+                    <p class="mt-4 text-slate-600 leading-relaxed">Courses, lessons, progress tracking, user accounts. Everything Kajabi charges $149/month for. Built once. Runs on your infrastructure.</p>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Course management</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Progress tracking</span>
+                      <span class="font-mono text-xs border border-slate-200 rounded-full px-3 py-1 text-slate-600">Student accounts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="flex items-center justify-center gap-4 mt-8">
+          <button id="carousel-prev" class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-200 hover:border-brand-600 hover:bg-brand-50 transition-colors" aria-label="Previous">
+            <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <!-- Dots -->
+          <div id="carousel-dots" class="flex gap-2">
+            <button class="w-2.5 h-2.5 rounded-full bg-brand-600 transition-colors" aria-label="Go to slide 1"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-colors" aria-label="Go to slide 2"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-colors" aria-label="Go to slide 3"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-colors" aria-label="Go to slide 4"></button>
+            <button class="w-2.5 h-2.5 rounded-full bg-slate-300 transition-colors" aria-label="Go to slide 5"></button>
+          </div>
+          <button id="carousel-next" class="w-10 h-10 flex items-center justify-center rounded-full border border-slate-200 hover:border-brand-600 hover:bg-brand-50 transition-colors" aria-label="Next">
+            <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
@@ -479,4 +626,88 @@ import Layout from '../../layouts/Layout.astro';
   document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up').forEach((el) => {
     observer.observe(el);
   });
+
+  // Carousel functionality
+  (function() {
+    const track = document.getElementById('carousel-track');
+    const inner = document.getElementById('carousel-inner');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const dots = document.querySelectorAll('#carousel-dots button');
+    
+    if (!track || !inner || !prevBtn || !nextBtn || dots.length === 0) return;
+    
+    let currentIndex = 0;
+    const totalSlides = dots.length;
+    let isTransitioning = false;
+    
+    function updateCarousel() {
+      if (isTransitioning) return;
+      isTransitioning = true;
+      
+      const trackWidth = track.offsetWidth;
+      inner.style.transform = `translateX(-${currentIndex * trackWidth}px)`;
+      
+      // Update dots
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('bg-brand-600', i === currentIndex);
+        dot.classList.toggle('bg-slate-300', i !== currentIndex);
+      });
+      
+      setTimeout(() => {
+        isTransitioning = false;
+      }, 500);
+    }
+    
+    function goToSlide(index) {
+      if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+      updateCarousel();
+    }
+    
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentIndex - 1);
+    });
+    
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentIndex + 1);
+    });
+    
+    // Dot navigation
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+      });
+    });
+    
+    // Handle resize
+    let resizeTimeout;
+
+    // Auto-rotate images within each card
+    document.querySelectorAll('[data-img-carousel]').forEach(container => {
+      const imgs = container.querySelectorAll('img');
+      if (imgs.length <= 1) return;
+      let current = 0;
+      setInterval(() => {
+        imgs[current].classList.remove('active');
+        current = (current + 1) % imgs.length;
+        imgs[current].classList.add('active');
+      }, 3000);
+    });
+
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        updateCarousel();
+      }, 100);
+    });
+    
+    // Initial update
+    updateCarousel();
+  })();
 </script>
